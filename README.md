@@ -208,9 +208,9 @@ IGV: *James T. Robinson, Helga Thorvaldsdóttir, Wendy Winckler, Mitchell Guttma
 Please load JSON files as a session. Upon loading the JSON file of interest, you can see the following output:
 
 ## 5.1 Example mice: Heart 
-<img width="951" alt="mice_example" src="https://github.com/AndergassenLab/Allelome.LINK/assets/146940261/d79d4879-a786-48ea-8294-1dc6f06e08fb">
+<img width="700" alt="mice_example" src="https://github.com/AndergassenLab/Allelome.LINK/assets/146940261/d79d4879-a786-48ea-8294-1dc6f06e08fb">
 
-*Track description*
+
 | Track      | Description   | 
 | ------------- | ------------- | 
 | Allelome.LINK_Ki_9w_enhancing| Green arcs show enhancing linkages, where an ncRNA was predicted to have an enhancing role on the connected protein-coding target gene. By clicking on the linkage, both interaction loci are named, and the linkage score is displayed | 
@@ -221,9 +221,9 @@ Please load JSON files as a session. Upon loading the JSON file of interest, you
 | Allelome.LINK_Ki_9w_repressive| Red arcs show repressive linkages, where an ncRNA was predicted to have a repressive role on the connected protein-coding target gene. By clicking on the linkage, both interaction loci are named, and the linkage score is displayed  |
 
 ## 5.2 Example human: Heart - Left Ventricle
-<img width="951" alt="mice_example" src="https://github.com/AndergassenLab/Allelome.LINK/assets/146940261/d79d4879-a786-48ea-8294-1dc6f06e08fb">
+<img width="700" alt="mice_example" src="https://github.com/AndergassenLab/Allelome.LINK/assets/146940261/d79d4879-a786-48ea-8294-1dc6f06e08fb">
 
-*Track description*
+
 | Track      | Description   | 
 | ------------- | ------------- | 
 | Allelome.LINK_Ki_9w_enhancing| Green arcs show enhancing linkages, where an ncRNA was predicted to have an enhancing role on the connected protein-coding target gene. By clicking on the linkage, both interaction loci are named, and the linkage score is displayed | 
