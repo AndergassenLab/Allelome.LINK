@@ -194,7 +194,7 @@ Allelome.LINK generates a results directory including different output files. Th
 | <name>.log    | Log file with information about your Allelome.LINK run | 
 | **/BED_files**  |                  | 
 | <name>.bed | BED6-file containing all loci passed, color-coded according to their allelic bias | 
-| <name>.bedpe | BEDPE file for link representation, color-coded accroding to mechanism | 
+| <name>.bedpe | BEDPE file for link representation, color-coded according to mechanism | 
 | <name>_repressing.bedpe | BEDPE file for IGV browser visualization, repressive links only | 
 | <name>_enhancing.bedpe | BEDPE file for IGV browser visualization, enhancing links only | 
 <br />
@@ -205,7 +205,7 @@ Candidate predictions can then be viewed via the Integrative Genomics Viewer (IG
 
 IGV: *James T. Robinson, Helga Thorvaldsdóttir, Wendy Winckler, Mitchell Guttman, Eric S. Lander, Gad Getz, Jill P. Mesirov. Integrative Genomics Viewer. Nature Biotechnology 29, 24–26 (2011). A public access version is also available: PMC3346182.*
 
-Please load json files as session. Upon loading the json file of interest you can see the following output:
+Please load JSON files as a session. Upon loading the JSON file of interest, you can see the following output:
 
 ## 5.1 Example mice: Heart 
 <img width="951" alt="mice_example" src="https://github.com/AndergassenLab/Allelome.LINK/assets/146940261/d79d4879-a786-48ea-8294-1dc6f06e08fb">
@@ -213,12 +213,25 @@ Please load json files as session. Upon loading the json file of interest you ca
 *Track description*
 | Track      | Description   | 
 | ------------- | ------------- | 
-| 1. Allelome.LINK_Ki_9w_enhancing| Green arcs show enhancing linkages, where a ncRNA was predicted to have an enhancing role on the connected protein-coding target gene. By clicking on the linkage, both interaction loci are named, and the linkage score is displayed | 
-| 2. Merged_fwd | RNA-seq tracks for representative example (a single replicate| 
-| 3. Allelome.PRO_Ki_9w | | 
-| 4. Refseq Genes | | 
-| 5. Merged_rev | | 
-| 6. Allelome.LINK_Ki_9w_repressive| Red arcs show repressive linkages, where a ncRNA was predicted to have a repressive role on the connected protein-coding target gene. By clicking on the linkage, both interaction loci are named, and the linkage score is displayed  |
+| Allelome.LINK_Ki_9w_enhancing| Green arcs show enhancing linkages, where an ncRNA was predicted to have an enhancing role on the connected protein-coding target gene. By clicking on the linkage, both interaction loci are named, and the linkage score is displayed | 
+| Merged_fwd | RNA-seq track as a representative example. The track was obtained from a single replicate out of the three replicates where the linkages are based on. Reads are shown for the forward strand only and split towards the maternal (red) and paternal (blue) allele | 
+| Allelome.PRO_Ki_9w | Allelome.PRO v2.0 output naming the locus, the median number of reads, the min. allelic score and the median allelic ratio. The color denotes the allelic bias (red: maternal, green: biallelic, blue: paternal).| 
+| Refseq Genes | RefSeq gene annotation | 
+| Merged_rev | RNA-seq track as a representative example. The track was obtained from a single replicate out of the three replicates where the linkages are based on. Reads are shown for the reverse strand only and split towards the maternal (red) and paternal (blue) allele | 
+| Allelome.LINK_Ki_9w_repressive| Red arcs show repressive linkages, where an ncRNA was predicted to have a repressive role on the connected protein-coding target gene. By clicking on the linkage, both interaction loci are named, and the linkage score is displayed  |
+
+## 5.2 Example human: Heart - Left Ventricle
+<img width="951" alt="mice_example" src="https://github.com/AndergassenLab/Allelome.LINK/assets/146940261/d79d4879-a786-48ea-8294-1dc6f06e08fb">
+
+*Track description*
+| Track      | Description   | 
+| ------------- | ------------- | 
+| Allelome.LINK_Ki_9w_enhancing| Green arcs show enhancing linkages, where an ncRNA was predicted to have an enhancing role on the connected protein-coding target gene. By clicking on the linkage, both interaction loci are named, and the linkage score is displayed | 
+| Merged_fwd | RNA-seq track as a representative example. The track was obtained from a single replicate out of the three replicates where the linkages are based on. Reads are shown for the forward strand only and split towards the maternal (red) and paternal (blue) allele | 
+| Allelome.PRO_Ki_9w | Allelome.PRO v2.0 output naming the locus, the median number of reads, the min. allelic score and the median allelic ratio. The color denotes the allelic bias (red: maternal, green: biallelic, blue: paternal).| 
+| Refseq Genes | RefSeq gene annotation | 
+| Merged_rev | RNA-seq track as a representative example. The track was obtained from a single replicate out of the three replicates where the linkages are based on. Reads are shown for the reverse strand only and split towards the maternal (red) and paternal (blue) allele | 
+| Allelome.LINK_Ki_9w_repressive| Red arcs show repressive linkages, where an ncRNA was predicted to have a repressive role on the connected protein-coding target gene. By clicking on the linkage, both interaction loci are named, and the linkage score is displayed  |
 
 ## Contact
-For any question, issue, bug or recommendation, please submit a github issue.
+For any question, issue, bug, or recommendation, please submit a GitHub issue.
