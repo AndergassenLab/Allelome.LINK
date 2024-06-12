@@ -58,7 +58,8 @@ The github repository contains the following folders and files:
 <br />
 
 <br />
-<img width="250" alt="logo 2" src="/Users/timhasenbein/Desktop/mnt_3/ge26jec2/02_project_allelome/13_misc/logo 2.png" align="right">
+<img width="250" alt="logo 2" src="https://github.com/AndergassenLab/Allelome.LINK/assets/146940261/6b195065-dd0b-40c2-9eec-2692301e8b46" align="right">
+
 
 # 3. Run Allelome.PRO v2.0
 To run Allelome.PRO v2.0 you need to prepare your input files as described below (3.1). As soon as you have your sample BAM, the annotation and SNP file you can start the pipeline from the command-line by typing:
@@ -146,7 +147,7 @@ Allelome.PRO v2.0 generates a results directory with different files including t
 
 <br />
 <br />
-<img width="250" alt="logo 2" src="/Users/timhasenbein/Desktop/mnt_3/ge26jec2/02_project_allelome/13_misc/logo 3.png" align="right">
+<img width="250" alt="logo 2" src="https://github.com/AndergassenLab/Allelome.LINK/assets/146940261/e02b66ad-6bc4-410e-81ef-5d83b355b98b" align="right">
 
 # 4. Run Allelome.LINK
 To run Allelome.LINK you just need your *locus_table.txt* file from the Allelome.PRO v2.0 run. To start Allelome.LINK, type in your command line:
