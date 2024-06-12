@@ -1,0 +1,74 @@
+{
+	"version": "2.15.11",
+	"showSampleNames": false,
+	"reference": {
+		"id": "hg38",
+		"name": "Human (GRCh38/hg38)",
+		"fastaURL": "https://igv-genepattern-org.s3.amazonaws.com/genomes/seq/hg38/hg38.fa",
+		"indexURL": "https://igv-genepattern-org.s3.amazonaws.com/genomes/seq/hg38/hg38.fa.fai",
+		"cytobandURL": "https://s3.amazonaws.com/igv.org.genomes/hg38/annotations/cytoBandIdeo.txt.gz",
+		"aliasURL": "https://s3.amazonaws.com/igv.org.genomes/hg38/hg38_alias.tab",
+		"chromosomeOrder": "chr1, chr2, chr3, chr4, chr5, chr6, chr7, chr8, chr9, chr10, chr11, chr12, chr13, chr14, chr15, chr16, chr17, chr18, chr19, chr20, chr21, chr22, chrX, chrY"
+	},
+	"locus": "all",
+	"roi": [],
+	"tracks": [
+		{
+			"type": "sequence",
+			"order": -9007199254740991
+		},
+		{
+			"url": "https://www.dropbox.com/scl/fi/axf35omyjyfyd8n2qe1if/Esophagus-Muscularis_enh.bedpe?rlkey=y76przxvy5dqm1gnz4txp2gu8&dl=0",
+			"filename": "Esophagus-Muscularis_enh.bedpe",
+			"name": "Esophagus-Muscularis_enh.bedpe",
+			"format": "bedpe",
+			"arcType": "proportional",
+			"logScale": false,
+			"type": "interact",
+			"theta": 1.5707963267948966,
+			"thickness": "3",
+			"order": 22
+		},
+		{
+			"url": "https://www.dropbox.com/scl/fi/p18oodo2i4x7rlhxh9lmx/GTEX-1C475-0726-SM-73KVL.Esophagus_Muscularis.RNAseq.bw?rlkey=tr7j6spc1m2eeertzp13ugcjb&dl=0",
+			"filename": "GTEX-1C475-0726-SM-73KVL.Esophagus_Muscularis.RNAseq.bw",
+			"name": "GTEX-1C475-0726-SM-73KVL.Esophagus_Muscularis.RNAseq.bw",
+			"format": "bigwig",
+			"type": "wig",
+			"order": 23
+		},
+		{
+			"url": "https://www.dropbox.com/scl/fi/huarn8fo88xff4a698yoh/gencode.v26.GRCh38.genes.name.color.bed?rlkey=bmreuomjj2gwuqpfl6sp0ueri&dl=0",
+			"filename": "gencode.v26.GRCh38.genes.name.color.bed",
+			"name": "gencode.v26.GRCh38.genes.name.color.bed",
+			"format": "bed",
+			"type": "annotation",
+			"height": 70,
+			"logScale": true,
+			"order": 24
+		},
+		{
+			"url": "https://www.dropbox.com/scl/fi/nr7b03uyc5fsdod97lt7y/Esophagus-Muscularis_rep.bedpe?rlkey=2p159t6fxe8x66c677rueko56&dl=0",
+			"filename": "Esophagus-Muscularis_rep.bedpe",
+			"name": "Esophagus-Muscularis_rep.bedpe",
+			"format": "bedpe",
+			"arcType": "proportional",
+			"logScale": false,
+			"type": "interact",
+			"theta": 1.5707963267948966,
+			"arcOrientation": false,
+			"thickness": "3",
+			"order": 26
+		},
+		{
+			"url": "https://www.dropbox.com/scl/fi/xi22pzei9fe5c5zejfvmj/gwas_snps.bed?rlkey=yj09si4o2nrjsbkvs1w5fh6q6&dl=0",
+			"filename": "gwas_snps.bed",
+			"name": "gwas_snps.bed",
+			"format": "bed",
+			"type": "annotation",
+			"height": 20,
+			"color": "#891100",
+			"order": 27
+		}
+	]
+}

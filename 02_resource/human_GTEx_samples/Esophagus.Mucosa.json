@@ -1,0 +1,74 @@
+{
+	"version": "2.15.11",
+	"showSampleNames": false,
+	"reference": {
+		"id": "hg38",
+		"name": "Human (GRCh38/hg38)",
+		"fastaURL": "https://igv-genepattern-org.s3.amazonaws.com/genomes/seq/hg38/hg38.fa",
+		"indexURL": "https://igv-genepattern-org.s3.amazonaws.com/genomes/seq/hg38/hg38.fa.fai",
+		"cytobandURL": "https://s3.amazonaws.com/igv.org.genomes/hg38/annotations/cytoBandIdeo.txt.gz",
+		"aliasURL": "https://s3.amazonaws.com/igv.org.genomes/hg38/hg38_alias.tab",
+		"chromosomeOrder": "chr1, chr2, chr3, chr4, chr5, chr6, chr7, chr8, chr9, chr10, chr11, chr12, chr13, chr14, chr15, chr16, chr17, chr18, chr19, chr20, chr21, chr22, chrX, chrY"
+	},
+	"locus": "all",
+	"roi": [],
+	"tracks": [
+		{
+			"type": "sequence",
+			"order": -9007199254740991
+		},
+		{
+			"url": "https://www.dropbox.com/scl/fi/m2uqj4xxe0ogcjhr90xxt/Esophagus-Mucosa_enh.bedpe?rlkey=a5c8bxye75l6jgnez6smwkanf&dl=0",
+			"filename": "Esophagus-Mucosa_enh.bedpe",
+			"name": "Esophagus-Mucosa_enh.bedpe",
+			"format": "bedpe",
+			"arcType": "proportional",
+			"logScale": false,
+			"type": "interact",
+			"theta": 1.5707963267948966,
+			"thickness": "3",
+			"order": 5
+		},
+		{
+			"url": "https://www.dropbox.com/scl/fi/lsyjfsysvzlm57ozadxg5/GTEX-11NSD-1126-SM-5N9BQ.Esophagus_Mucosa.RNAseq.bw?rlkey=4rm2uhyv6isvdq08w2g2vxpma&dl=0",
+			"filename": "GTEX-11NSD-1126-SM-5N9BQ.Esophagus_Mucosa.RNAseq.bw",
+			"name": "GTEX-11NSD-1126-SM-5N9BQ.Esophagus_Mucosa.RNAseq.bw",
+			"format": "bigwig",
+			"type": "wig",
+			"order": 6
+		},
+		{
+			"url": "https://www.dropbox.com/scl/fi/huarn8fo88xff4a698yoh/gencode.v26.GRCh38.genes.name.color.bed?rlkey=bmreuomjj2gwuqpfl6sp0ueri&dl=0",
+			"filename": "gencode.v26.GRCh38.genes.name.color.bed",
+			"name": "gencode.v26.GRCh38.genes.name.color.bed",
+			"format": "bed",
+			"type": "annotation",
+			"height": 70,
+			"logScale": true,
+			"order": 22
+		},
+		{
+			"url": "https://www.dropbox.com/scl/fi/wzk3nxl1wt5iqufb2dcwl/Esophagus-Mucosa_rep.bedpe?rlkey=y0pvzr0ccta3794q3r8nqf1go&dl=0",
+			"filename": "Esophagus-Mucosa_rep.bedpe",
+			"name": "Esophagus-Mucosa_rep.bedpe",
+			"format": "bedpe",
+			"type": "interact",
+			"arcType": "proportional",
+			"logScale": false,
+			"theta": 1.5707963267948966,
+			"arcOrientation": false,
+			"thickness": "3",
+			"order": 23
+		},
+		{
+			"url": "https://www.dropbox.com/scl/fi/xi22pzei9fe5c5zejfvmj/gwas_snps.bed?rlkey=yj09si4o2nrjsbkvs1w5fh6q6&dl=0",
+			"filename": "gwas_snps.bed",
+			"name": "gwas_snps.bed",
+			"format": "bed",
+			"type": "annotation",
+			"height": 20,
+			"color": "#891100",
+			"order": 24
+		}
+	]
+}

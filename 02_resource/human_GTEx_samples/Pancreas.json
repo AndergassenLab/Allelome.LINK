@@ -1,0 +1,74 @@
+{
+	"version": "2.15.11",
+	"showSampleNames": false,
+	"reference": {
+		"id": "hg38",
+		"name": "Human (GRCh38/hg38)",
+		"fastaURL": "https://igv-genepattern-org.s3.amazonaws.com/genomes/seq/hg38/hg38.fa",
+		"indexURL": "https://igv-genepattern-org.s3.amazonaws.com/genomes/seq/hg38/hg38.fa.fai",
+		"cytobandURL": "https://s3.amazonaws.com/igv.org.genomes/hg38/annotations/cytoBandIdeo.txt.gz",
+		"aliasURL": "https://s3.amazonaws.com/igv.org.genomes/hg38/hg38_alias.tab",
+		"chromosomeOrder": "chr1, chr2, chr3, chr4, chr5, chr6, chr7, chr8, chr9, chr10, chr11, chr12, chr13, chr14, chr15, chr16, chr17, chr18, chr19, chr20, chr21, chr22, chrX, chrY"
+	},
+	"locus": "all",
+	"roi": [],
+	"tracks": [
+		{
+			"type": "sequence",
+			"order": -9007199254740991
+		},
+		{
+			"url": "https://www.dropbox.com/scl/fi/olmn4sk068v687o3h86jb/Pancreas_enh.bedpe?rlkey=98fqt04iaktene9usc1pt2d6g&dl=0",
+			"filename": "Pancreas_enh.bedpe",
+			"name": "Pancreas_enh.bedpe",
+			"format": "bedpe",
+			"arcType": "proportional",
+			"logScale": false,
+			"type": "interact",
+			"theta": 1.5707963267948966,
+			"thickness": "3",
+			"order": 5
+		},
+		{
+			"url": "https://www.dropbox.com/scl/fi/9fzoxmh8icck28dqnu3lk/GTEX-1H1E6-0826-SM-9WG83.Pancreas.RNAseq.bw?rlkey=xe7y7d0b706719qi8p73g4j2q&dl=0",
+			"filename": "GTEX-1H1E6-0826-SM-9WG83.Pancreas.RNAseq.bw",
+			"name": "GTEX-1H1E6-0826-SM-9WG83.Pancreas.RNAseq.bw",
+			"format": "bigwig",
+			"type": "wig",
+			"order": 6
+		},
+		{
+			"url": "https://www.dropbox.com/scl/fi/huarn8fo88xff4a698yoh/gencode.v26.GRCh38.genes.name.color.bed?rlkey=bmreuomjj2gwuqpfl6sp0ueri&dl=0",
+			"filename": "gencode.v26.GRCh38.genes.name.color.bed",
+			"name": "gencode.v26.GRCh38.genes.name.color.bed",
+			"format": "bed",
+			"type": "annotation",
+			"height": 70,
+			"logScale": true,
+			"order": 27
+		},
+		{
+			"url": "https://www.dropbox.com/scl/fi/zcv02j8mlbp31ssbvm8ox/Pancreas_rep.bedpe?rlkey=f8eq2sjbh1l4wnjgtmo0z8aa7&dl=0",
+			"filename": "Pancreas_rep.bedpe",
+			"name": "Pancreas_rep.bedpe",
+			"format": "bedpe",
+			"arcType": "proportional",
+			"logScale": false,
+			"type": "interact",
+			"theta": 1.5707963267948966,
+			"arcOrientation": false,
+			"thickness": "3",
+			"order": 28
+		},
+		{
+			"url": "https://www.dropbox.com/scl/fi/xi22pzei9fe5c5zejfvmj/gwas_snps.bed?rlkey=yj09si4o2nrjsbkvs1w5fh6q6&dl=0",
+			"filename": "gwas_snps.bed",
+			"name": "gwas_snps.bed",
+			"format": "bed",
+			"type": "annotation",
+			"height": 20,
+			"color": "#891100",
+			"order": 29
+		}
+	]
+}

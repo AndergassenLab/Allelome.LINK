@@ -1,0 +1,74 @@
+{
+	"version": "2.15.11",
+	"showSampleNames": false,
+	"reference": {
+		"id": "hg38",
+		"name": "Human (GRCh38/hg38)",
+		"fastaURL": "https://igv-genepattern-org.s3.amazonaws.com/genomes/seq/hg38/hg38.fa",
+		"indexURL": "https://igv-genepattern-org.s3.amazonaws.com/genomes/seq/hg38/hg38.fa.fai",
+		"cytobandURL": "https://s3.amazonaws.com/igv.org.genomes/hg38/annotations/cytoBandIdeo.txt.gz",
+		"aliasURL": "https://s3.amazonaws.com/igv.org.genomes/hg38/hg38_alias.tab",
+		"chromosomeOrder": "chr1, chr2, chr3, chr4, chr5, chr6, chr7, chr8, chr9, chr10, chr11, chr12, chr13, chr14, chr15, chr16, chr17, chr18, chr19, chr20, chr21, chr22, chrX, chrY"
+	},
+	"locus": "all",
+	"roi": [],
+	"tracks": [
+		{
+			"type": "sequence",
+			"order": -9007199254740991
+		},
+		{
+			"url": "https://www.dropbox.com/scl/fi/3u77xu7oknuczqulmgyba/Whole-Blood_enh.bedpe?rlkey=i6d9fv6nk80mxrdjmplv1imlc&dl=0",
+			"filename": "Whole-Blood_enh.bedpe",
+			"name": "Whole-Blood_enh.bedpe",
+			"format": "bedpe",
+			"type": "interact",
+			"arcType": "proportional",
+			"logScale": false,
+			"theta": 1.5707963267948966,
+			"thickness": "3",
+			"order": 5
+		},
+		{
+			"url": "https://www.dropbox.com/scl/fi/e4motoejec8bainzqthup/GTEX-1LG7Z-0005-SM-DKPQ6.Whole_Blood.RNAseq.bw?rlkey=jzvyssfubr11byv8gto6t7p0h&dl=0",
+			"filename": "GTEX-1LG7Z-0005-SM-DKPQ6.Whole_Blood.RNAseq.bw",
+			"name": "GTEX-1LG7Z-0005-SM-DKPQ6.Whole_Blood.RNAseq.bw",
+			"format": "bigwig",
+			"type": "wig",
+			"order": 6
+		},
+		{
+			"url": "https://www.dropbox.com/scl/fi/huarn8fo88xff4a698yoh/gencode.v26.GRCh38.genes.name.color.bed?rlkey=bmreuomjj2gwuqpfl6sp0ueri&dl=0",
+			"filename": "gencode.v26.GRCh38.genes.name.color.bed",
+			"name": "gencode.v26.GRCh38.genes.name.color.bed",
+			"format": "bed",
+			"type": "annotation",
+			"height": 70,
+			"logScale": true,
+			"order": 27
+		},
+		{
+			"url": "https://www.dropbox.com/scl/fi/20l9z73g9v5usqnzmapy0/Whole-Blood_rep.bedpe?rlkey=pf02f1dtcril7kjvtm00ddcxb&dl=0",
+			"filename": "Whole-Blood_rep.bedpe",
+			"name": "Whole-Blood_rep.bedpe",
+			"format": "bedpe",
+			"arcType": "proportional",
+			"logScale": false,
+			"type": "interact",
+			"theta": 1.5707963267948966,
+			"arcOrientation": false,
+			"thickness": "3",
+			"order": 28
+		},
+		{
+			"url": "https://www.dropbox.com/scl/fi/xi22pzei9fe5c5zejfvmj/gwas_snps.bed?rlkey=yj09si4o2nrjsbkvs1w5fh6q6&dl=0",
+			"filename": "gwas_snps.bed",
+			"name": "gwas_snps.bed",
+			"format": "bed",
+			"type": "annotation",
+			"height": 20,
+			"color": "#891100",
+			"order": 29
+		}
+	]
+}

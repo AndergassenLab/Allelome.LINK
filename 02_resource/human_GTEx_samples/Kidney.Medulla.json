@@ -1,0 +1,74 @@
+{
+	"version": "2.15.11",
+	"showSampleNames": false,
+	"reference": {
+		"id": "hg38",
+		"name": "Human (GRCh38/hg38)",
+		"fastaURL": "https://igv-genepattern-org.s3.amazonaws.com/genomes/seq/hg38/hg38.fa",
+		"indexURL": "https://igv-genepattern-org.s3.amazonaws.com/genomes/seq/hg38/hg38.fa.fai",
+		"cytobandURL": "https://s3.amazonaws.com/igv.org.genomes/hg38/annotations/cytoBandIdeo.txt.gz",
+		"aliasURL": "https://s3.amazonaws.com/igv.org.genomes/hg38/hg38_alias.tab",
+		"chromosomeOrder": "chr1, chr2, chr3, chr4, chr5, chr6, chr7, chr8, chr9, chr10, chr11, chr12, chr13, chr14, chr15, chr16, chr17, chr18, chr19, chr20, chr21, chr22, chrX, chrY"
+	},
+	"locus": "all",
+	"roi": [],
+	"tracks": [
+		{
+			"type": "sequence",
+			"order": -9007199254740991
+		},
+		{
+			"url": "https://www.dropbox.com/scl/fi/dii6xp00se3rxpkq3ni8v/Kidney-Medulla_enh.bedpe?rlkey=0vk6zp8btnlnvtklp2hugrdlg&dl=0",
+			"filename": "Kidney-Medulla_enh.bedpe",
+			"name": "Kidney-Medulla_enh.bedpe",
+			"format": "bedpe",
+			"arcType": "proportional",
+			"logScale": false,
+			"type": "interact",
+			"theta": 1.5707963267948966,
+			"thickness": "3",
+			"order": 3
+		},
+		{
+			"url": "https://www.dropbox.com/scl/fi/8ivapgfghvkshifgpug32/GTEX-T5JC-1626-SM-EZ6KW.Kidney_Medulla.RNAseq.bw?rlkey=db5ewqr0yegksu8p8an3w31tt&dl=0",
+			"filename": "GTEX-T5JC-1626-SM-EZ6KW.Kidney_Medulla.RNAseq.bw",
+			"name": "GTEX-T5JC-1626-SM-EZ6KW.Kidney_Medulla.RNAseq.bw",
+			"format": "bigwig",
+			"type": "wig",
+			"order": 4
+		},
+		{
+			"url": "https://www.dropbox.com/scl/fi/huarn8fo88xff4a698yoh/gencode.v26.GRCh38.genes.name.color.bed?rlkey=bmreuomjj2gwuqpfl6sp0ueri&dl=0",
+			"filename": "gencode.v26.GRCh38.genes.name.color.bed",
+			"name": "gencode.v26.GRCh38.genes.name.color.bed",
+			"format": "bed",
+			"type": "annotation",
+			"height": 70,
+			"logScale": true,
+			"order": 27
+		},
+		{
+			"url": "https://www.dropbox.com/scl/fi/m9ggj3trdz8alhg8prtys/Kidney-Medulla_rep.bedpe?rlkey=huqet3tb6ev1vzunhk4s0daq2&dl=0",
+			"filename": "Kidney-Medulla_rep.bedpe",
+			"name": "Kidney-Medulla_rep.bedpe",
+			"format": "bedpe",
+			"type": "interact",
+			"theta": 1.5707963267948966,
+			"arcType": "proportional",
+			"logScale": false,
+			"arcOrientation": false,
+			"thickness": "3",
+			"order": 28
+		},
+		{
+			"url": "https://www.dropbox.com/scl/fi/xi22pzei9fe5c5zejfvmj/gwas_snps.bed?rlkey=yj09si4o2nrjsbkvs1w5fh6q6&dl=0",
+			"filename": "gwas_snps.bed",
+			"name": "gwas_snps.bed",
+			"format": "bed",
+			"type": "annotation",
+			"height": 20,
+			"color": "#891100",
+			"order": 29
+		}
+	]
+}

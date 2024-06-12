@@ -1,0 +1,130 @@
+{
+	"version": "2.15.11",
+	"showSampleNames": false,
+	"reference": {
+		"id": "mm10",
+		"name": "Mouse (GRCm38/mm10)",
+		"fastaURL": "https://s3.amazonaws.com/igv.broadinstitute.org/genomes/seq/mm10/mm10.fa",
+		"indexURL": "https://s3.amazonaws.com/igv.broadinstitute.org/genomes/seq/mm10/mm10.fa.fai",
+		"cytobandURL": "https://s3.amazonaws.com/igv.broadinstitute.org/annotations/mm10/cytoBandIdeo.txt.gz",
+		"order": 1000000,
+		"chromosomeOrder": "chr1,chr2,chr3,chr4,chr5,chr6,chr7,chr8,chr9,chr10,chr11,chr12,chr13,chr14,chr15,chr16,chr17,chr18,chr19,chrX,chrY"
+	},
+	"locus": "all",
+	"roi": [],
+	"tracks": [
+		{
+			"type": "sequence",
+			"order": -9007199254740991
+		},
+		{
+			"url": "https://www.dropbox.com/scl/fi/2jsdt0usjrlfz73xil95b/Ki_9w_enh.bedpe?rlkey=ngc174s34zdlrcp6ch1aebf3i&dl=0",
+			"filename": "Ki_9w_enh.bedpe",
+			"name": "Allelome.LINK_Ki_9w_enhancing",
+			"format": "bedpe",
+			"type": "interact",
+			"theta": 1.5707963267948966,
+			"thickness": "3",
+			"arcType": "proportional",
+			"logScale": false,
+			"order": -4
+		},
+		{
+			"name": "Merged_fwd",
+			"height": 50,
+			"type": "merged",
+			"tracks": [
+				{
+					"url": "https://www.dropbox.com/scl/fi/lodcwr2pnwmj9nhfjisuq/kidney_9w_fwd.genome1_sort.bam.bw?rlkey=pdflx87ovirei6s6d8om17dio&dl=0",
+					"filename": "kidney_9w_fwd.genome1_sort.bam.bw",
+					"name": "kidney_9w_fwd.genome1_sort.bam.bw",
+					"format": "bigwig",
+					"type": "wig",
+					"color": "#ff2101",
+					"order": 12,
+					"isMergedTrack": true,
+					"height": 50
+				},
+				{
+					"url": "https://www.dropbox.com/scl/fi/x31jherfjh7695k2l2dh5/kidney_9w_fwd.genome2_sort.bam.bw?rlkey=pxsxg468jdihdw5q1kzybstcn&dl=0",
+					"filename": "kidney_9w_fwd.genome2_sort.bam.bw",
+					"name": "kidney_9w_fwd.genome2_sort.bam.bw",
+					"format": "bigwig",
+					"type": "wig",
+					"color": "#002eff",
+					"order": 9,
+					"isMergedTrack": true,
+					"height": 50
+				}
+			],
+			"order": -3,
+			"logScale": false
+		},
+		{
+			"url": "https://www.dropbox.com/scl/fi/a9k0pmmxeloufh7mf0mm0/Ki_9w_reps_colupdate.bed?rlkey=af6gojtwr0gxpa6353j2nrus6&dl=0",
+			"filename": "Ki_9w_reps_colupdate.bed",
+			"name": "Allelome.PRO_Ki_9w",
+			"format": "bed",
+			"type": "annotation",
+			"height": 70,
+			"order": 12
+		},
+		{
+			"name": "Refseq Genes",
+			"format": "refgene",
+			"url": "https://hgdownload.soe.ucsc.edu/goldenPath/mm10/database/ncbiRefSeq.txt.gz",
+			"indexed": false,
+			"order": 15,
+			"type": "annotation",
+			"height": 70,
+			"color": "#000000"
+		},
+		{
+			"name": "Merged_rev",
+			"height": 50,
+			"type": "merged",
+			"flipAxis": true,
+			"tracks": [
+				{
+					"url": "https://www.dropbox.com/scl/fi/nxielq1fjfm7xtomadozz/kidney_9w_rev.genome1_sort.bam.bw?rlkey=5s9b17a2zrqaqzt8lxwjehaaz&dl=0",
+					"filename": "kidney_9w_rev.genome1_sort.bam.bw",
+					"name": "kidney_9w_rev.genome1_sort.bam.bw",
+					"format": "bigwig",
+					"type": "wig",
+					"color": "#ff2101",
+					"flipAxis": true,
+					"order": 14,
+					"isMergedTrack": true,
+					"height": 50
+				},
+				{
+					"url": "https://www.dropbox.com/scl/fi/r7c0iuxdz0mb4fbxnej9o/kidney_9w_rev.genome2_sort.bam.bw?rlkey=gcnjecsbmqsu9oivkilk1vtp2&dl=0",
+					"filename": "kidney_9w_rev.genome2_sort.bam.bw",
+					"name": "kidney_9w_rev.genome2_sort.bam.bw",
+					"format": "bigwig",
+					"type": "wig",
+					"color": "#002eff",
+					"flipAxis": true,
+					"order": 16,
+					"isMergedTrack": true,
+					"height": 50
+				}
+			],
+			"order": 999999,
+			"logScale": false
+		},
+		{
+			"url": "https://www.dropbox.com/scl/fi/rajx4zdq48v5t16u9lxz7/Ki_9w_rep.bedpe?rlkey=ez7mkpgye4hh61e345p4apsko&dl=0",
+			"filename": "Ki_9w_rep.bedpe",
+			"name": "Allelome.LINK_Ki_9w_repressive",
+			"format": "bedpe",
+			"type": "interact",
+			"theta": 1.5707963267948966,
+			"arcOrientation": false,
+			"thickness": "3",
+			"arcType": "proportional",
+			"logScale": false,
+			"order": 1000000
+		}
+	]
+}

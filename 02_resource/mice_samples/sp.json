@@ -1,0 +1,130 @@
+{
+	"version": "2.15.11",
+	"showSampleNames": false,
+	"reference": {
+		"id": "mm10",
+		"name": "Mouse (GRCm38/mm10)",
+		"fastaURL": "https://s3.amazonaws.com/igv.broadinstitute.org/genomes/seq/mm10/mm10.fa",
+		"indexURL": "https://s3.amazonaws.com/igv.broadinstitute.org/genomes/seq/mm10/mm10.fa.fai",
+		"cytobandURL": "https://s3.amazonaws.com/igv.broadinstitute.org/annotations/mm10/cytoBandIdeo.txt.gz",
+		"order": 1000000,
+		"chromosomeOrder": "chr1,chr2,chr3,chr4,chr5,chr6,chr7,chr8,chr9,chr10,chr11,chr12,chr13,chr14,chr15,chr16,chr17,chr18,chr19,chrX,chrY"
+	},
+	"locus": "all",
+	"roi": [],
+	"tracks": [
+		{
+			"type": "sequence",
+			"order": -9007199254740991
+		},
+		{
+			"url": "https://www.dropbox.com/scl/fi/ih5mrujk35ljqmebi10zz/Sp_9w_enh.bedpe?rlkey=lulu2tfn08n8d5joadvhe9h5o&dl=0",
+			"filename": "Sp_9w_enh.bedpe",
+			"name": "Allelome.LINK_Sp_9w_enhancing",
+			"format": "bedpe",
+			"type": "interact",
+			"theta": 1.5707963267948966,
+			"thickness": "3",
+			"arcType": "proportional",
+			"logScale": false,
+			"order": -5
+		},
+		{
+			"name": "Merged_fwd",
+			"height": 50,
+			"type": "merged",
+			"tracks": [
+				{
+					"url": "https://www.dropbox.com/scl/fi/8bqmn2itrsuwcg9qnupgp/spleen_9w_fwd.genome1_sort.bam.bw?rlkey=inv95wv78mw45insp1l8ilvdn&dl=0",
+					"filename": "spleen_9w_fwd.genome1_sort.bam.bw",
+					"name": "spleen_9w_fwd.genome1_sort.bam.bw",
+					"format": "bigwig",
+					"type": "wig",
+					"color": "#ff2101",
+					"order": 9,
+					"isMergedTrack": true,
+					"height": 50
+				},
+				{
+					"url": "https://www.dropbox.com/scl/fi/j7h8aev0m2ekjab4kurku/spleen_9w_fwd.genome2_sort.bam.bw?rlkey=b3y5mk9rrb1t085wulhs43cgr&dl=0",
+					"filename": "spleen_9w_fwd.genome2_sort.bam.bw",
+					"name": "spleen_9w_fwd.genome2_sort.bam.bw",
+					"format": "bigwig",
+					"type": "wig",
+					"color": "#002eff",
+					"order": 12,
+					"isMergedTrack": true,
+					"height": 50
+				}
+			],
+			"order": -3,
+			"logScale": false
+		},
+		{
+			"url": "https://www.dropbox.com/scl/fi/3b9kwbvf4h9aabh1qg34m/Sp_9w_reps_colupdate.bed?rlkey=rst2nk2hltmymv2yqhke8ja08&dl=0",
+			"filename": "Sp_9w_reps_colupdate.bed",
+			"name": "Allelome.PRO_Sp_9w",
+			"format": "bed",
+			"type": "annotation",
+			"height": 70,
+			"order": -1
+		},
+		{
+			"name": "Refseq Genes",
+			"format": "refgene",
+			"url": "https://hgdownload.soe.ucsc.edu/goldenPath/mm10/database/ncbiRefSeq.txt.gz",
+			"indexed": false,
+			"order": 1000002,
+			"type": "annotation",
+			"height": 70,
+			"color": "#000000"
+		},
+		{
+			"name": "Merged_rev",
+			"height": 50,
+			"type": "merged",
+			"flipAxis": true,
+			"tracks": [
+				{
+					"url": "https://www.dropbox.com/scl/fi/qk4f0tmqwv1njqdgtvdyp/spleen_9w_rev.genome1_sort.bam.bw?rlkey=zj2imx6rkuci3h7qxsn9kgbm5&dl=0",
+					"filename": "spleen_9w_rev.genome1_sort.bam.bw",
+					"name": "spleen_9w_rev.genome1_sort.bam.bw",
+					"format": "bigwig",
+					"type": "wig",
+					"color": "#ff2101",
+					"flipAxis": true,
+					"order": 14,
+					"isMergedTrack": true,
+					"height": 50
+				},
+				{
+					"url": "https://www.dropbox.com/scl/fi/79yitjyml5pvt4giczksq/spleen_9w_rev.genome2_sort.bam.bw?rlkey=bp8j7j7m06q439014m98rjswl&dl=0",
+					"filename": "spleen_9w_rev.genome2_sort.bam.bw",
+					"name": "spleen_9w_rev.genome2_sort.bam.bw",
+					"format": "bigwig",
+					"type": "wig",
+					"color": "#002eff",
+					"flipAxis": true,
+					"order": 16,
+					"isMergedTrack": true,
+					"height": 50
+				}
+			],
+			"order": 1000003,
+			"logScale": false
+		},
+		{
+			"url": "https://www.dropbox.com/scl/fi/kn1g35mf6oi1xoj8f9vsh/Sp_9w_rep.bedpe?rlkey=da09da3iwzx6chii70adkokra&dl=0",
+			"filename": "Sp_9w_rep.bedpe",
+			"name": "Allelome.LINK_Sp_9w_repressive",
+			"format": "bedpe",
+			"type": "interact",
+			"theta": 1.5707963267948966,
+			"arcOrientation": false,
+			"thickness": "3",
+			"arcType": "proportional",
+			"logScale": false,
+			"order": 1000005
+		}
+	]
+}

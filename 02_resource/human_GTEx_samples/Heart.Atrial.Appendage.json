@@ -1,0 +1,74 @@
+{
+	"version": "2.15.11",
+	"showSampleNames": false,
+	"reference": {
+		"id": "hg38",
+		"name": "Human (GRCh38/hg38)",
+		"fastaURL": "https://igv-genepattern-org.s3.amazonaws.com/genomes/seq/hg38/hg38.fa",
+		"indexURL": "https://igv-genepattern-org.s3.amazonaws.com/genomes/seq/hg38/hg38.fa.fai",
+		"cytobandURL": "https://s3.amazonaws.com/igv.org.genomes/hg38/annotations/cytoBandIdeo.txt.gz",
+		"aliasURL": "https://s3.amazonaws.com/igv.org.genomes/hg38/hg38_alias.tab",
+		"chromosomeOrder": "chr1, chr2, chr3, chr4, chr5, chr6, chr7, chr8, chr9, chr10, chr11, chr12, chr13, chr14, chr15, chr16, chr17, chr18, chr19, chr20, chr21, chr22, chrX, chrY"
+	},
+	"locus": "all",
+	"roi": [],
+	"tracks": [
+		{
+			"type": "sequence",
+			"order": -9007199254740991
+		},
+		{
+			"url": "https://www.dropbox.com/scl/fi/wgq4igprefg26ry9ktlz4/Heart-Atrial-Appendage_enh.bedpe?rlkey=gms3nnqr26ndbb8a268ac0dl8&dl=0",
+			"filename": "Heart-Atrial-Appendage_enh.bedpe",
+			"name": "Heart-Atrial-Appendage_enh.bedpe",
+			"format": "bedpe",
+			"type": "interact",
+			"arcType": "proportional",
+			"logScale": false,
+			"theta": 1.5707963267948966,
+			"thickness": "3",
+			"order": 3
+		},
+		{
+			"url": "https://www.dropbox.com/scl/fi/3yn6x9gm4u835tya7e8sw/GTEX-13S86-0326-SM-5SI6K.Heart_Atrial_Appendage.RNAseq.bw?rlkey=ns7fmt1mm2k42cf1mi6hkrgxd&dl=0",
+			"filename": "GTEX-13S86-0326-SM-5SI6K.Heart_Atrial_Appendage.RNAseq.bw",
+			"name": "GTEX-13S86-0326-SM-5SI6K.Heart_Atrial_Appendage.RNAseq.bw",
+			"format": "bigwig",
+			"type": "wig",
+			"order": 26
+		},
+		{
+			"url": "https://www.dropbox.com/scl/fi/huarn8fo88xff4a698yoh/gencode.v26.GRCh38.genes.name.color.bed?rlkey=bmreuomjj2gwuqpfl6sp0ueri&dl=0",
+			"filename": "gencode.v26.GRCh38.genes.name.color.bed",
+			"name": "gencode.v26.GRCh38.genes.name.color.bed",
+			"format": "bed",
+			"type": "annotation",
+			"height": 70,
+			"logScale": true,
+			"order": 27
+		},
+		{
+			"url": "https://www.dropbox.com/scl/fi/k0socqftil53tzw6zvdz7/Heart-Atrial-Appendage_rep.bedpe?rlkey=g1ujpxi3r6z3svqpubul3xne7&dl=0",
+			"filename": "Heart-Atrial-Appendage_rep.bedpe",
+			"name": "Heart-Atrial-Appendage_rep.bedpe",
+			"format": "bedpe",
+			"type": "interact",
+			"arcType": "proportional",
+			"logScale": false,
+			"theta": 1.5707963267948966,
+			"arcOrientation": false,
+			"thickness": "3",
+			"order": 28
+		},
+		{
+			"url": "https://www.dropbox.com/scl/fi/xi22pzei9fe5c5zejfvmj/gwas_snps.bed?rlkey=yj09si4o2nrjsbkvs1w5fh6q6&dl=0",
+			"filename": "gwas_snps.bed",
+			"name": "gwas_snps.bed",
+			"format": "bed",
+			"type": "annotation",
+			"height": 20,
+			"color": "#891100",
+			"order": 29
+		}
+	]
+}
