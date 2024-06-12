@@ -1,5 +1,4 @@
-<img width="350" alt="logo" src="/Users/timhasenbein/Desktop/mnt_3/ge26jec2/02_project_allelome/13_misc/logo.png" align="right">
-
+<img width="350" alt="logo" src="https://github.com/AndergassenLab/Allelome.LINK/assets/146940261/587779dd-a554-4c99-b6b9-a2b60e3e1297" align="right">
 
 # Allelome.PRO v2.0     Allelome.LINK
 
