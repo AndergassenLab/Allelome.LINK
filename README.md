@@ -2,9 +2,9 @@
 
 # Allelome.PRO v2.0     Allelome.LINK
 
-Allelome.PRO is a previously published fully automated bioinformatics pipeline to detect allele-specific expression and histone marks (*Andergassen et. al Nucleic Acids Res. 43, 2015*). Based on heterozygous SNPs, Allelome.PRO assigns sequencing reads to the alleles and classifies your NGS-reads into bi- or monoallelically expressed. By accepting different input data such as RNA-,ChIP-,ATAC- and single-cell-sequencing data, the tool offers a wide range of application. Here, we present Allelome.PRO v2.0, an updated version of the previously published pipeline. Unlike its predecessor, Allelome.PRO v2.0 does not discriminate between ASE loci arising from imprinted or genetic factors. This update streamlines the identification of ASE at the individual level, improving its applicability to diverse biological samples, including human datasets where forward and reverse crosses cannot be obtained. Please find a detailed overview of all updates in the patch notes.
+Allelome.PRO is a previously published fully automated bioinformatics pipeline to detect allele-specific expression and histone marks (*Andergassen et. al Nucleic Acids Res. 43, 2015*). Based on heterozygous SNPs, Allelome.PRO assigns sequencing reads to the alleles and classifies your NGS data into bi- or monoallelically expressed. By accepting different input data such as RNA-,ChIP-,ATAC-, and single-cell-sequencing data, the tool offers a wide range of applications. Here, we present Allelome.PRO v2.0, an updated version of the previously published pipeline. Unlike its predecessor, Allelome.PRO v2.0 does not discriminate between ASE loci arising from imprinted or genetic factors. This update streamlines the identification of ASE at the individual level, improving its applicability to diverse biological samples, including human datasets where forward and reverse crosses cannot be obtained. Please find a detailed overview of all updates in the patch notes.
 
-To facilitate the prediction of regulatory interactions and their mode-of-action, we added Allelome.LINK as an extension of Allelome.PRO v2.0. Leveraging the allele-specific information, the pipeline connects ASE loci within user-defined windows in cis and predicts enhancing or repressive effects based on the allelic bias toward identical or opposing alleles. Allelome.LINK offers straightforward execution through a simple one-line command, improving accessibility for diverse users. The output is presented as a tabular list of potential target candidates sorted by linkage score and is accompanied by a BEDPE file for direct visualization, providing an intuitive interface for exploring the results. By default, Allelome.LINK connects all allele-specific loci within the specified window-size. To obtain ncRNA-to-target linkages only, the user has to filter the output file.
+To facilitate the prediction of regulatory interactions and their mode-of-action, we added Allelome.LINK as an extension of Allelome.PRO v2.0. Leveraging the allele-specific information, the pipeline connects ASE loci within user-defined windows in *cis* and predicts enhancing or repressive effects based on the allelic bias toward identical or opposing alleles. Allelome.LINK offers straightforward execution through a simple one-line command, improving accessibility for diverse users. The output is presented as a tabular list of potential target candidates sorted by linkage score and is accompanied by a BEDPE file for direct visualization, providing an intuitive interface for exploring the results. By default, Allelome.LINK connects all allele-specific loci within the specified window-size. To obtain ncRNA-to-target linkages only, the user has to filter the output file.
 
 #### Publications:
 Allelome.PRO v1.0 \
@@ -15,7 +15,7 @@ Allelome.PRO v2.0 / Allelome.LINK \
 <br />
 
 # 1. Installation
-To run Allelome.PRO v2.0 / Allelome.LINK no installation is required. The source code is provided as github repository at https://github.com/IPTim/Allelome.LINK. Simply download and unzip the repository and you can start the pipeline via the terminal.
+To run Allelome.PRO v2.0 / Allelome.LINK no installation is required. The source code is provided as github repository at [https://github.com/IPTim/Allelome.LINK](https://github.com/AndergassenLab/Allelome.LINK/). Simply download and unzip the repository, and you can start the pipeline via the terminal.
 
 ## 1.1 Dependencies 
 Software:
@@ -53,7 +53,7 @@ The github repository contains the following folders and files:
 | **src/scripts:** | |
 | scripts/bamtrim.pl | Perl script to trim reads covering multiple SNPs to only cover one  | 
 | scripts/bamtrim.sh | Bash script to trim reads covering multiple SNPs to only cover one  |   
-| scripts/score.R    | R script to generate pileup files and SNP counting. Statisctical scoring of allelic counts and generation of output files | 
+| scripts/score.R    | R script to generate pileup files and SNP counting. Statistical scoring of allelic counts and generation of output files | 
 
 <br />
 
@@ -62,14 +62,14 @@ The github repository contains the following folders and files:
 
 
 # 3. Run Allelome.PRO v2.0
-To run Allelome.PRO v2.0 you need to prepare your input files as described below (3.1). As soon as you have your sample BAM, the annotation and SNP file you can start the pipeline from the command-line by typing:
+To run Allelome.PRO v2.0, you need to prepare your input files as described below (3.1). As soon as you have your sample BAM, the annotation, and SNP file, you can start the pipeline from the command line by typing:
 
 Usage:
 ```bash
 bash Allelome.PROv2.0.sh -i <input_bam> -a <annotation_file> -s <SNP_file> -o <output_directory> [options]
 ```
 
-Please make sure that Allelome.PROv2.0.sh is in your PATH or specify the absolute path of the script. For all input files we suggest to give full paths and locations. Besides the required input flags, you have additional options, stated in the table below.
+Please make sure that Allelome.PROv2.0.sh is in your PATH, or specify the absolute path of the script. For all input files, we suggest giving full paths and locations. Besides the required input flags, you have additional options, as stated in the table below.
 
 <br />
 
@@ -80,10 +80,10 @@ Three different files are required as input for Allelome.PRO v2.0:
 * SNP file (BED6 format)
 
 ### 3.1.1 Sample file:
-The sample file is a BAM file that stores the aligned NGS-reads from either RNA-, ChIP-, ATAC- or scRNA-sequencing in binary format. The file can be sorted by coordinates or unsorted. If unsorted Allelome.PRO v2.0 can sort the BAM file for you. 
+The sample file is a BAM file that stores the aligned NGS-reads from either RNA-, ChIP-, ATAC-, or scRNA-sequencing in binary format. The file can be sorted by coordinates or unsorted. If unsorted Allelome.PRO v2.0 can sort the BAM file for you. 
 
 ### 3.1.2 Annotation file:
-The annotation file is a six column text file containing the posititon information of your loci of interest in BED6 format
+The annotation file is a six-column text file containing the position information of your loci of interest in BED6 format
 (see UCSC format description for more details). The helperscript createAnnotation.sh can be used to generate your own annotation file.
 *Table 2* Overview of the BED6 annotation file format
 | Column  | Description   | 
@@ -96,9 +96,9 @@ The annotation file is a six column text file containing the posititon informati
 | 6   | Strand (e.g. +,- or . for not defined)| 
 
 ### 3.1.3 SNP file:
-The SNP file is also a six column text file in BED6 format (see table 2). However, the difference to the annotation file
-is that the *name* column consists of two letters representing the two SNPs present at a certain loci. The SNP file is used to determine which SNP is located on which allele. Therefore, the order of the two letter SNPs is important, since the first base indicates the variant at allele 1, while the second base is present at allele 2. The way the SNP file is created defines which allele is "1" and "2". 
-SNP positions have to be based on the same reference genome that the BAM file was aligned to (e.g. mm10). One source for mouse SNP data is the FTP site of the Sanger institute (eg. https://ftp.ebi.ac.uk/pub/databases/mousegenomes/REL-1505-SNPs_Indels/ ). If Allelome.PRO v2.0 is used for hybrid F1 mice samples, the helperscript ./createSNPfile.sh can be used to generate the SNP file via:
+The SNP file is also a six-column text file in BED6 format (see Table 2). However, the difference to the annotation file
+is that the *name* column consists of two letters representing the two SNPs present at a certain loci. The SNP file is used to determine which SNP is located on which allele. Therefore, the order of the two-letter SNPs is important since the first base indicates the variant at allele 1, while the second base is present at allele 2. The way the SNP file is created defines which allele is "1" and "2". 
+SNP positions have to be based on the same reference genome that the BAM file was aligned to (e.g. mm10). One source for mouse SNP data is the FTP site of the Sanger Institute (e.g. https://ftp.ebi.ac.uk/pub/databases/mousegenomes/REL-1505-SNPs_Indels/ ). If Allelome.PRO v2.0 is used for hybrid F1 mice samples, the helperscript createSNPfile.sh can be used to generate the SNP file via:
 ```bash
 sh create_SNPfile_v5.sh mgp.v5.merged.snps_all.dbSNP142.vcf
 ```
@@ -123,7 +123,7 @@ If Allelome.PRO v2.0 is used with eg. human data, SNPs have to be called and pha
 <br />
 
 ## 3.3 Output files
-Allelome.PRO v2.0 generates a results directory with different files including the allelic bias of your sequencing reads, as well as files for debugging and visualization. The main output files are the **locus_table.txt** file with information on the allelic status of each loci in the annotation and the **<name>.bed** file, to visualize your results in a genome browser. Please, find the detailed information about all output files in Table 3.
+Allelome.PRO v2.0 generates a results directory with different files, including the allelic bias of your sequencing reads, as well as files for debugging and visualization. The main output files are the **locus_table.txt** file with information on the allelic status of each loci in the annotation and the **<name>.bed** file to visualize your results in a genome browser. Please find detailed information about all output files in Table 3.
 
 *Table 3.*
 | Name      | Description   | 
@@ -150,19 +150,18 @@ Allelome.PRO v2.0 generates a results directory with different files including t
 <img width="250" alt="logo 2" src="https://github.com/AndergassenLab/Allelome.LINK/assets/146940261/e02b66ad-6bc4-410e-81ef-5d83b355b98b" align="right">
 
 # 4. Run Allelome.LINK
-To run Allelome.LINK you just need your *locus_table.txt* file from the Allelome.PRO v2.0 run. To start Allelome.LINK, type in your command line:
-
+To run Allelome.LINK the *locus_table.txt* file from the Allelome.PRO v2.0 run is needed. To start Allelome.LINK, type in your command line:
 Usage: 
 ```bash
 Rscript Allelome.LINK.R -i <input_locus_table.txt> -o <output_directory> [options] 
 ```
-Again, please make sure that Allelome.LINK is in your PATH or give the full direction to the file. Allelome.LINK is linking loci within a given window size in *cis*. You can specifiy your the genomic window by the --window-size or -w flag which is the number of basepairs up- and downstream of the locus (see table 4). The default value is 100Kb in each direction from a given locus. Further you can specify the number of total reads that have to cover a gene to consider it for the analysis (--total-reads/-r; default: 20), as well as the --allelelic-bias/-b to define the cut-off that distinguishes bialleic from allele-specific expression. The default value is 0.7, which means that at least 70% of the reads from a genes have to be expressed from one allele to consider it as imbalanced. Please find all options described in Table 4.
+Again, please make sure that Allelome.LINK is in your PATH, or give the full direction to the file. Allelome.LINK is linking loci within a given window size in *cis*. You can specify your genomic window by the --window-size or -w flag, which is the number of base pairs up and downstream of the locus (see Table 4). The default value is 100Kb in each direction from a given locus. Further, you can specify the number of total reads that have to cover a gene to consider it for the analysis (--total-reads/-r; default: 20), as well as the --allelelic-bias/-b to define the cut-off that distinguishes biallelic from allele-specific expression. The default value is 0.7, which means that at least 70% of the reads from a gene have to be expressed from one allele to consider it as imbalanced. Please find all options described in Table 4.
 
 <br />
 
 ## 4.1 Input files
 * Locus table (.txt format) as given by Allelome.PRO.
-To run Allelome.LINK you simply need the **locus_table.txt** file from your previous Allelome.PRO run.
+To run Allelome.LINK the *locus_table.txt* file from the Allelome.PRO v2.0 run is needed.
 
 <br />
 
@@ -184,7 +183,7 @@ To run Allelome.LINK you simply need the **locus_table.txt** file from your prev
 <br />
 
 ## 4.3 Output files 
-Allelome.LINK generates a results directory including different output files. The main output files are the **links_table.txt** with information on the linked loci and the **.bedpe** file, to visualize the links in a genome browser. Please, find the detailed information about all output files in Table 5.
+Allelome.LINK generates a results directory including different output files. The main output files are **links_table.txt** with information on the linked loci and **.bedpe** file to visualize the links in a genome browser. Please find the detailed information about all output files in Table 5.
 
 *Table 5.*
 | Name      | Description   | 
@@ -200,14 +199,14 @@ Allelome.LINK generates a results directory including different output files. Th
 <br />
 
 # 5. Resource generated by *Hasenbein T., Andergassen, D. et al.*
-To interactively access the resource generated by *Hasenbein T., Andergassen, D. et al.*, use JSON files for mice and human samples from the ./resource/ folder. 
-Candidate predictions can then be viewed via the Integrative Genomics Viewer (IGV) at https://igv.org/app/. 
+To interactively access the resource generated by *Hasenbein T., Andergassen, D. et al.*, use JSON files for mice and human samples from the resource folder. 
+Candidate predictions can then be viewed via the Integrative Genomics Viewer (IGV) at [https://igv.org/app/](https://igv.org/app/). 
 
 Publication: *Hasenbein T., Andergassen, D. et al.*
 
 IGV: *James T. Robinson, Helga Thorvaldsdóttir, Wendy Winckler, Mitchell Guttman, Eric S. Lander, Gad Getz, Jill P. Mesirov. Integrative Genomics Viewer. Nature Biotechnology 29, 24–26 (2011). A public access version is also available: PMC3346182.*
 
-Please load JSON files as a session. Upon loading the JSON file of interest, you can see the following output:
+Please load JSON files as a session. Upon loading the file of interest, you can see the following output:
 
 ## 5.1 Example mice: Heart 
 <img width="700" alt="mice_example" src="https://github.com/AndergassenLab/Allelome.LINK/assets/146940261/d79d4879-a786-48ea-8294-1dc6f06e08fb">
@@ -215,22 +214,22 @@ Please load JSON files as a session. Upon loading the JSON file of interest, you
 
 | Track      | Description   | 
 | ------------- | ------------- | 
-| Allelome.LINK_Ki_9w_enhancing| Green arcs show enhancing linkages, where an ncRNA was predicted to have an enhancing role on the connected protein-coding target gene. By clicking on the linkage, both interaction loci are named, and the linkage score is displayed | 
+| Allelome.LINK_Ki_9w_enhancing| Green arcs show enhancing linkages, where a ncRNA was predicted to have an enhancing role on the connected protein-coding target gene. By clicking on the linkage, both interaction loci are named, and the linkage score is displayed | 
 | Merged_fwd | RNA-seq track as a representative example. The track was obtained from a single replicate out of the three replicates where the linkages are based on. Reads are shown for the forward strand only and split towards the maternal (red) and paternal (blue) allele | 
-| Allelome.PRO_Ki_9w | Allelome.PRO v2.0 output naming the locus, the median number of reads, the min. allelic score and the median allelic ratio. The color denotes the allelic bias (red: maternal, green: biallelic, blue: paternal).| 
+| Allelome.PRO_Ki_9w | Allelome.PRO v2.0 output naming the locus, the median number of reads, the min. allelic score and the median allelic ratio. The color denotes the allelic bias (red: maternal, green: biallelic, blue: paternal)| 
 | Refseq Genes | RefSeq gene annotation | 
 | Merged_rev | RNA-seq track as a representative example. The track was obtained from a single replicate out of the three replicates where the linkages are based on. Reads are shown for the reverse strand only and split towards the maternal (red) and paternal (blue) allele | 
-| Allelome.LINK_Ki_9w_repressive| Red arcs show repressive linkages, where an ncRNA was predicted to have a repressive role on the connected protein-coding target gene. By clicking on the linkage, both interaction loci are named, and the linkage score is displayed  |
+| Allelome.LINK_Ki_9w_repressive| Red arcs show repressive linkages, where a ncRNA was predicted to have a repressive role on the connected protein-coding target gene. By clicking on the linkage, both interaction loci are named, and the linkage score is displayed  |
 
 ## 5.2 Example human: Heart - Left Ventricle
 <img width="700" alt="mice_example" src="https://github.com/AndergassenLab/Allelome.LINK/assets/146940261/cf728db9-3bbd-46ef-99a1-9dbce639c9a2">
 
 | Track      | Description   | 
 | ------------- | ------------- | 
-| Cells-Cultured-fibroblasts_enh| Green arcs show enhancing linkages, where an ncRNA was predicted to have an enhancing role on the connected protein-coding target gene. By clicking a linkage, both interaction loci are named, along with the linkage score and the GTEx sample where the linkage was found. Different arcs represent different linkages. | 
+| Cells-Cultured-fibroblasts_enh| Green arcs show enhancing linkages, where a ncRNA was predicted to have an enhancing role on the connected protein-coding target gene. By clicking a linkage, both interaction loci are named, along with the linkage score and the GTEx sample where the linkage was found. Different arcs represent different samples. | 
 | RNAseq.bw | RNA-seq track as a representative example. The track was obtained from a single sample of the tissue on which the linkages are based.| 
 | annotation.bed | GENCODE v26 GRCh38 annotation | 
-| Cells-Cultured-fibroblasts_rep| Red arcs show repressive linkages, where an ncRNA was predicted to have a repressive role on the connected protein-coding target gene. By clicking on the linkage, both interaction loci are named, along with the linkage score and the GTEx sample where the linkage was found. Different arcs represent different linkages.  |
+| Cells-Cultured-fibroblasts_rep| Red arcs show repressive linkages, where a ncRNA was predicted to have a repressive role on the connected protein-coding target gene. By clicking on the linkage, both interaction loci are named, along with the linkage score and the GTEx sample where the linkage was found. Different arcs represent different sample.  |
 | gwas_snps.bed | GWAS SNPs derived from the Ebi GWAS catalog | 
 
 ## Contact
