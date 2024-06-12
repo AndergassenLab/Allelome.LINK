@@ -225,10 +225,10 @@ Please load JSON files as a session. Upon loading the JSON file of interest, you
 
 | Track      | Description   | 
 | ------------- | ------------- | 
-| Allelome.LINK_Ki_9w_enhancing| Green arcs show enhancing linkages, where an ncRNA was predicted to have an enhancing role on the connected protein-coding target gene. By clicking a linkage, both interaction loci are named, along with the linkage score and the GTEx sample where the linkage was found. Different arcs represent different linkages. | 
+| Cells-Cultured-fibroblasts_enh| Green arcs show enhancing linkages, where an ncRNA was predicted to have an enhancing role on the connected protein-coding target gene. By clicking a linkage, both interaction loci are named, along with the linkage score and the GTEx sample where the linkage was found. Different arcs represent different linkages. | 
 | RNAseq.bw | RNA-seq track as a representative example. The track was obtained from a single sample of the tissue on which the linkages are based.| 
 | annotation.bed | GENCODE v26 GRCh38 annotation | 
-| Allelome.LINK_Ki_9w_repressive| Red arcs show repressive linkages, where an ncRNA was predicted to have a repressive role on the connected protein-coding target gene. By clicking on the linkage, both interaction loci are named, along with the linkage score and the GTEx sample where the linkage was found. Different arcs represent different linkages.  |
+| Cells-Cultured-fibroblasts_rep| Red arcs show repressive linkages, where an ncRNA was predicted to have a repressive role on the connected protein-coding target gene. By clicking on the linkage, both interaction loci are named, along with the linkage score and the GTEx sample where the linkage was found. Different arcs represent different linkages.  |
 | gwas_snps.bed | GWAS SNPs derived from the Ebi GWAS catalog | 
 
 ## Contact
