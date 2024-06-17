@@ -34,11 +34,11 @@ Publication: *Decoding gene targets of the non-coding genome and their mechanism
 
 | Tissue      |    | 
 | ------------- | ------------- |
-|[Adipose Subcutaneous](https://tinyurl.com/25dvgchq%7C)|[Adipose Visceral Omentum](https://tinyurl.com/29lequjy)|
-|[Adrenal Gland](https://tinyurl.com/23v2wc8x%7C)|[Artery Aorta](https://tinyurl.com/28lvvmlz%7C)|
-|[Artery Coronary](https://tinyurl.com/24lbmaz2%7C)|[Artery Tibial](https://tinyurl.com/24ysaz6l) |
+|[Adipose Subcutaneous](https://tinyurl.com/25dvgchq)|[Adipose Visceral Omentum](https://tinyurl.com/29lequjy)|
+|[Adrenal Gland](https://tinyurl.com/23v2wc8x)|[Artery Aorta](https://tinyurl.com/28lvvmlz)|
+|[Artery Coronary](https://tinyurl.com/24lbmaz2)|[Artery Tibial](https://tinyurl.com/24ysaz6l) |
 |[Bladder](https://tinyurl.com/23hz4eu2) |[Brain Amygdala](https://tinyurl.com/27l6avdw) |
-|[Brain Anterior cingulate cortex BA24](https://tinyurl.com/27p6vmch%7C)|[Brain Caudate basal ganglia](https://tinyurl.com/28asbmlk) |[Brain Cerebellar Hemisphere](https://tinyurl.com/22syscd4)|[Brain Cerebellum](https://tinyurl.com/257jdjqv) |[Brain Cortex](https://tinyurl.com/2a6t855p%7C)|[Brain Frontal Cortex BA9](https://tinyurl.com/223ahknd%7C)|[Brain Hippocampus](https://tinyurl.com/2dauk3qz%7C)|[Brain Hypothalamus](https://tinyurl.com/2co3a8r4) |[Brain Nucleus accumbens basal ganglia](https://tinyurl.com/25xm2b4c) |
+|[Brain Anterior cingulate cortex BA24](https://tinyurl.com/27p6vmch)|[Brain Caudate basal ganglia](https://tinyurl.com/28asbmlk) |[Brain Cerebellar Hemisphere](https://tinyurl.com/22syscd4)|[Brain Cerebellum](https://tinyurl.com/257jdjqv) |[Brain Cortex](https://tinyurl.com/2a6t855p)|[Brain Frontal Cortex BA9](https://tinyurl.com/223ahknd)|[Brain Hippocampus](https://tinyurl.com/2dauk3qz)|[Brain Hypothalamus](https://tinyurl.com/2co3a8r4) |[Brain Nucleus accumbens basal ganglia](https://tinyurl.com/25xm2b4c) |
 |[Brain Putamen basal ganglia](https://tinyurl.com/23x8k7pp) |[Brain Spinal cord cervical c1](https://tinyurl.com/29ootpsd) |
 |[Brain Substantia nigra](https://tinyurl.com/224orlph) |[Breast Mammary tissue](https://tinyurl.com/2623mswr) |
 |[Cells Culture fibroblasts](https://tinyurl.com/25af7vlv) |[Cells EBV transformed lymphocytes](https://tinyurl.com/2cd8lmwc) |
@@ -50,14 +50,14 @@ Publication: *Decoding gene targets of the non-coding genome and their mechanism
 |[Kidney Cortex](https://tinyurl.com/2d87mt72) |[Kidney Medulla](https://tinyurl.com/2dn7rlsy) |
 |[Liver](https://tinyurl.com/297wbdwg) |[Lung](https://tinyurl.com/2a7s8ycm) |
 |[Minor Salivary Gland](https://tinyurl.com/2yw377w6) |[Muscle Skeletal](https://tinyurl.com/2xujcou5) |
-|[Nerve Tibial](https://tinyurl.com/27oqsfnt%7C)|[Ovary](https://tinyurl.com/237rprzd) |
-|[Pancreas](https://tinyurl.com/2ytj3g9b) |[Pituitary](https://tinyurl.com/2adjf5l5%7C) |
+|[Nerve Tibial](https://tinyurl.com/27oqsfnt)|[Ovary](https://tinyurl.com/237rprzd) |
+|[Pancreas](https://tinyurl.com/2ytj3g9b) |[Pituitary](https://tinyurl.com/2adjf5l5) |
 |[Prostate](https://tinyurl.com/29oa4sqj) |[Skin Not Sun Exposed Suprapubic](https://tinyurl.com/25sb8uas) |
 |[Skin Sun Exposed Lower leg](https://tinyurl.com/23g6wc3g) |[Small Intestine](https://tinyurl.com/2b8bqn36) |
 |[Spleen](https://tinyurl.com/29385rbp) |[Stomach](https://tinyurl.com/22xnjsrl) |
 |[Testis](https://tinyurl.com/24442unl) |[Thyroid](https://tinyurl.com/2bpdjkxw) |
 |[Uterus](https://tinyurl.com/28pn876b) |[Vagina](https://tinyurl.com/292bzbt8) |
-|[Whole Blood](https://tinyurl.com/26jkpupr%7C)|
+|[Whole Blood](https://tinyurl.com/26jkpupr)|
 
 ### 5.2 Example: Heart - Left Ventricle
 <img width="700" alt="mice_example" src="https://github.com/AndergassenLab/Allelome.LINK/assets/146940261/cf728db9-3bbd-46ef-99a1-9dbce639c9a2">
