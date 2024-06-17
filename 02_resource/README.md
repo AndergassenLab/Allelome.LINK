@@ -17,7 +17,7 @@ Publication: *Decoding gene targets of the non-coding genome and their mechanism
 |[Heart](https://tinyurl.com/26a6yh3d%7C)|[Liver](https://tinyurl.com/2ayy2lyk) |[Spleen](https://tinyurl.com/236ydb5h%7C)|
 
 ### 1.2 Example: Heart
-<img width="700" alt="mice_example" src="https://github.com/AndergassenLab/Allelome.LINK/assets/146940261/d79d4879-a786-48ea-8294-1dc6f06e08fb">
+<img width="700" alt="mice_example" src="https://github.com/AndergassenLab/Allelome.LINK/assets/146940261/d79d4879-a786-48ea-8294-1dc6f06e08fb"><br />
 
 | Track      | Description   |
 | ------------- | ------------- |
@@ -28,7 +28,7 @@ Publication: *Decoding gene targets of the non-coding genome and their mechanism
 | Merged_rev | RNA-seq track as a representative example. The track was obtained from a single replicate out of the three replicates where the linkages are based on. Reads are shown for the reverse strand only and split towards the maternal (red) and paternal (blue) allele |
 | Allelome.LINK_Ki_9w_repressive| Red arcs show repressive linkages, where a ncRNA was predicted to have a repressive function on the linked protein-coding target gene. By clicking on the linkage, both interaction loci are named, and the linkage score is displayed  |
 
-## 2. Human GTEx sample
+## 2. Human GTEx samples
 
 ### 2.1 IGV browser links
 
@@ -60,7 +60,7 @@ Publication: *Decoding gene targets of the non-coding genome and their mechanism
 |[Whole Blood](https://tinyurl.com/26jkpupr)|
 
 ### 5.2 Example: Heart - Left Ventricle
-<img width="700" alt="mice_example" src="https://github.com/AndergassenLab/Allelome.LINK/assets/146940261/cf728db9-3bbd-46ef-99a1-9dbce639c9a2">
+<img width="700" alt="mice_example" src="https://github.com/AndergassenLab/Allelome.LINK/assets/146940261/cf728db9-3bbd-46ef-99a1-9dbce639c9a2"><br />
 
 | Track      | Description   |
 | ------------- | ------------- |
