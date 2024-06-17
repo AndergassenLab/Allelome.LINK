@@ -14,7 +14,7 @@ Publication: *Decoding gene targets of the non-coding genome and their mechanism
 | Tissue      |       |      | 
 | ------------- | ------------- | ------------- | 
 |[Brain](https://tinyurl.com/23ebywed) | [Kidney](https://tinyurl.com/27mlz2f3) |[Lung](https://tinyurl.com/29bf5xtj) |
-|[Heart](https://tinyurl.com/26a6yh3d%7C)|[Liver](https://tinyurl.com/2ayy2lyk) |[Spleen](https://tinyurl.com/236ydb5h%7C)|
+|[Heart](https://tinyurl.com/26a6yh3d)|[Liver](https://tinyurl.com/2ayy2lyk) |[Spleen](https://tinyurl.com/236ydb5h)|
 
 ### 1.2 Example: Heart
 <img width="700" alt="mice_example" src="https://github.com/AndergassenLab/Allelome.LINK/assets/146940261/d79d4879-a786-48ea-8294-1dc6f06e08fb"><br />
