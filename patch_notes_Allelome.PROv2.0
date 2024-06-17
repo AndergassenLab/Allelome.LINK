@@ -1,1 +1,59 @@
+RELEASE PATCH NOTES - Allelome.PRO v2.0
+Purpose of the update: 
+We developed Allelome.PRO v2.0, an updated version of the previously published pipeline  (Andergassen et al., 2015) to facilitate the usage of single samples. Unlike its predecessor, Allelome.PRO v2.0 does not discriminate between allele-specific loci arising from imprinted or genetic factors. This update streamlines the identification of ASE at the individual level, improving its applicability to diverse biological samples, including human datasets where forward and reverse crosses cannot be obtained. The source code is available at ____.
+
+Usage of the Allelome.PRO pipeline:
+•	Configuration Simplified: The config file from v1.0 has been removed, and command-line parsing via input flags has been implemented. As a result, Allelome.PRO v2.0 can now be executed with a simple one-line command, eliminating the need for prior config file design.
+•	Removal of input flags: We removed several input flags required for the 4x sample approach to facilitate the usage of Allelome.PRO v2.0 on individual samples. This included:
+o	ratio
+o	fdr_param
+o	main_title
+o	y_axis
+o	strains
+o	for_c1
+o	for_c2
+o	rev_c1
+o	rev_c2
+•	Total Read Cut-off Flag: A flag for the total read cut-off has been introduced, determining the number of reads required to cover SNP positions across a gene for inclusion in the run.
+
+Allelome.PRO Run:
+•	Classification Update: The classification of allele-specific loci has been revised. The following categories have been removed:
+o	Imprinted: Maternal (MAT)
+o	Imprinted: Paternal (PAT)
+o	Strain bias: Strain 1
+o	Strain bias: Strain 2
+o	Not informative (NI)
+o	No SNP (NS)
+•	New Approach: The allelic bias is calculated for each locus without classification in categories. This allows the user to obtain information on biallelic and allele-specifically expressed loci and eliminates the requirement for 2x forward and 2x reverse crosses. Hence, we streamlined the allele-specific mapping for single samples.
+•	Mock Comparison and Ratio Filter Removed: The FDR-based mock comparison and the user-set ratio filter have been removed to ensure an unbiased approach.
+•	Log File Implementation: A combined log file generation for Allelome.PRO v2.0 runs have been implemented.
+
+Script Updates:
+•	Functionality Removal: The following scripts have been removed:
+o	pileup_filter.pl (implemented in R scoring script)
+o	read_count.pl (implemented in R scoring script)
+o	bed_creator_SNP.sh
+o	bed_creator.sh
+•	Bed File Generation: Bed file generation is now implemented within the R script.
+
+Output Files:
+•	Removal of Files: The following output files have been removed:
+o	<name>_IG.txt
+o	<name>_SG.txt
+o	<name>_locus_full.txt
+o	<name>_SNP_full.txt
+o	<name>.pdf
+o	info.txt
+o	Reduced output for the debug file.
+•	Log File: A full log file has been implemented.
+
+Bug Fix:
+•	Pileup File Correction: Removal of ^ and the following character, which denoted mapping quality in the pileup filter.
+•	Error Fix: In v1.0, the -o flag was missing for the samtools sort command. This has been rectified.
+
+Miscellaneous:
+•	Bamtrim.sh Update: Removed time from bamtrim.sh.
+
+For further information or assistance, please refer to the updated documentation or submit a GitHub issue.
+
 
