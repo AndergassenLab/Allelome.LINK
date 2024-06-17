@@ -15,7 +15,7 @@ Allelome.PRO v2.0 / Allelome.LINK \
 <br />
 
 # 1. Installation
-To run Allelome.PRO v2.0 / Allelome.LINK no installation is required. The source code is provided as github repository at [https://github.com/IPTim/Allelome.LINK](https://github.com/AndergassenLab/Allelome.LINK/). Simply download and unzip the repository, and you can start the pipeline via the terminal.
+To run Allelome.PRO v2.0 / Allelome.LINK no installation is required. The source code is provided as [github repository](https://github.com/AndergassenLab/Allelome.LINK/). Simply download and unzip the repository, and you can start the pipeline via the terminal.
 
 ## 1.1 Dependencies 
 Software:
