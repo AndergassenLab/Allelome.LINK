@@ -45,7 +45,7 @@ Required:
     -o        |    Output directory.
 
 Optional:
-    -so       |    Specify if bam file is sorted (1 sorted (default); 0 unsorted).
+    -z       |    Specify if bam file is sorted (1 sorted (default); 0 unsorted).
 
     -r        |    Min. number of reads for SNPs to be included (default 1).
 
@@ -57,13 +57,13 @@ Misc:
     }
 
 # cmd parsing: flags
-while getopts :i:a:s:o:so:r:t:h: flag; do
+while getopts :i:a:s:o:z:r:t:h: flag; do
     case $flag in
         i) sample=$OPTARG;;
         a) annotation=$OPTARG;;
         s) snp_file=$OPTARG;;
         o) outputdir=$OPTARG;;
-       so) sorted=$OPTARG;;
+        z) sorted=$OPTARG;;
         r) minreads=$OPTARG;;
         t) totalreads=$OPTARG;;
     esac
