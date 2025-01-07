@@ -15,7 +15,7 @@ Candidate predictions will be displayed via the Integrative Genomics Viewer (IGV
 |[Brain](https://tinyurl.com/23ebywed) | [Kidney](https://tinyurl.com/27mlz2f3) |[Lung](https://tinyurl.com/29bf5xtj) |
 |[Heart](https://tinyurl.com/26a6yh3d)|[Liver](https://tinyurl.com/2ayy2lyk) |[Spleen](https://tinyurl.com/236ydb5h)|
 
-### 1.2 Example: Heart
+### 1.2 Example: Kidney
 <img width="700" alt="mice_example" src="https://github.com/AndergassenLab/Allelome.LINK/assets/146940261/d79d4879-a786-48ea-8294-1dc6f06e08fb"><br />
 
 | Track      | Description   |
@@ -58,7 +58,7 @@ Candidate predictions will be displayed via the Integrative Genomics Viewer (IGV
 |[Uterus](https://tinyurl.com/28pn876b) |[Vagina](https://tinyurl.com/292bzbt8) |
 |[Whole Blood](https://tinyurl.com/26jkpupr)|
 
-### 5.2 Example: Heart - Left Ventricle
+### 5.2 Example: Cells- Cultured Fibroblast
 <img width="700" alt="mice_example" src="https://github.com/AndergassenLab/Allelome.LINK/assets/146940261/cf728db9-3bbd-46ef-99a1-9dbce639c9a2"><br />
 
 | Track      | Description   |
