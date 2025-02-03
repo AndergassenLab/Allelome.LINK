@@ -4,14 +4,15 @@
 
 Allelome.PRO is a previously published, fully automated bioinformatics pipeline to detect allele-specific expression and histone marks (*Andergassen et. al Nucleic Acids Res. 43, 2015*). Based on heterozygous SNPs, Allelome.PRO assigns sequencing reads to the alleles and classifies NGS data into bi- or monoallelically expressed. By accepting different input data such as RNA-,ChIP-,ATAC-, or single-cell-sequencing data, the tool offers a wide range of applications. Here, we present Allelome.PRO v2.0, an updated version of the previously published pipeline. Unlike its predecessor, Allelome.PRO v2.0 does not discriminate between ASE loci arising from imprinted or genetic factors. This update streamlines the identification of ASE at the individual level, improving its applicability to diverse biological samples, including human datasets where forward and reverse crosses cannot be obtained. Please find a detailed overview of all updates in the patch notes.
 
-To facilitate the prediction of regulatory interactions and their mode-of-action, we added Allelome.LINK as an extension of Allelome.PRO v2.0. Leveraging the allele-specific information, the pipeline connects ASE loci within user-defined windows in *cis* and predicts enhancing or repressive effects based on the allelic bias toward identical or opposing alleles. Allelome.LINK offers straightforward execution through a simple one-line command, improving accessibility for diverse users. The output is presented as a tabular list of potential target candidates sorted by linkage score and is accompanied by a BEDPE file for direct visualization, providing an intuitive interface for exploring the results. By default, Allelome.LINK connects all allele-specific loci within the specified window-size. To obtain ncRNA-to-target linkages only, the user has to filter the output file.
+To facilitate the prediction of regulatory interactions and their mode-of-action, we added Allelome.LINK as an extension of Allelome.PRO v2.0. Leveraging the allele-specific information, the pipeline predicts ncRNA-mRNA ASE events between loci within user-defined windows in *cis* and predicts enhancing or repressive effects based on the allelic bias toward identical or opposing alleles. Allelome.LINK offers straightforward execution through a simple one-line command, improving accessibility for diverse users. The output is presented as a tabular list of potential target candidates sorted by linkage score and is accompanied by a BEDPE file for direct visualization, providing an intuitive interface for exploring the results. By default, Allelome.LINK connects all allele-specific loci within the specified window-size. To obtain ncRNA-mRNA ASE events only, the user has to filter the output file.
 
 #### Publications:
 Allelome.PRO v1.0 \
-*Andergassen, D., Dotter, C.P., Kulinski, T.M., Guenzl, P.M., Bammer, P.C., Barlow, D.P., Pauler, F.M., and Hudson, Q.J. (2015). Allelome.PRO, a pipeline to define allele-specific genomic features from high-throughput sequencing data. Nucleic Acids Res. 43.*
+*Andergassen D., Dotter C.P., Kulinski T.M., Guenzl P.M., Bammer P.C., Barlow D.P., Pauler F.M., and Hudson Q.J. (2015). Allelome.PRO, a pipeline to define allele-specific genomic features from high-throughput sequencing data. Nucleic Acids Res. 43.*
 <br /> \
 Allelome.PRO v2.0 / Allelome.LINK \
-*Hasenbein T., Andergassen, D.*
+*Hasenbein T., Hoelzl S., Engelhardt S., Andergassen D. (2025). Allele-specific genomics decodes gene targets and mechanisms of the non-coding genome (BioRxiv)*
+**
 <br />
 
 # 1. Installation
