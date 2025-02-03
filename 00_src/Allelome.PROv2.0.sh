@@ -11,9 +11,6 @@ set -e
 ## Tim Hasenbein
 ## Last modification 02.2024
 ## Creation: 04.2021
-## Allelome.PRO pipeline. Steps comprise interesection of SNPs/annotation, BAM trimming, pileup file generation, allelic scoring and bed file creation
-## Bugfix version 31.01.2024, l. 199 added gsub(/\^.?/, ""); to remove any character in the pileup file after ^
-## Removed base quality filtering ion score.R script l.57  & fil$quality >=20
 
 
 #####*********************** Help message *************************#####
