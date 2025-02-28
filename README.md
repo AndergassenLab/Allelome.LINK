@@ -1,6 +1,4 @@
-<img width="350" alt="logo" src="https://github.com/AndergassenLab/Allelome.LINK/assets/146940261/587779dd-a554-4c99-b6b9-a2b60e3e1297" align="right">
-
-![Allelome PRO_logo_both](https://github.com/user-attachments/assets/43ef7fd5-86f9-4f2d-8be6-4761173871e3)
+<img width="350" alt="logo" src="https://github.com/user-attachments/assets/43ef7fd5-86f9-4f2d-8be6-4761173871e3" align="right">
 
 
 # Allelome.PRO2     Allelome.LINK
@@ -67,7 +65,7 @@ The github repository contains the following folders and files:
 <br />
 
 <br />
-<img width="250" alt="logo 2" src="https://github.com/AndergassenLab/Allelome.LINK/assets/146940261/6b195065-dd0b-40c2-9eec-2692301e8b46" align="right">
+<img width="250" alt="logo 2" src="https://github.com/user-attachments/assets/1c842f31-2397-40cf-a69f-355f394bce3e" align="right">
 
 
 # 3. Run Allelome.PRO2
