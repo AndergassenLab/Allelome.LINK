@@ -1,5 +1,6 @@
 <img width="350" alt="logo" src="https://github.com/AndergassenLab/Allelome.LINK/assets/146940261/587779dd-a554-4c99-b6b9-a2b60e3e1297" align="right">
 
+![Allelome PRO_logo_both](https://github.com/user-attachments/assets/43ef7fd5-86f9-4f2d-8be6-4761173871e3)
 
 
 # Allelome.PRO2     Allelome.LINK
