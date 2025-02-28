@@ -14,7 +14,7 @@ The code for both pipelines will be available upon publication.
 
 
 #### Publications:
-Allelome.PRO v1.0 \
+Allelome.PRO \
 *Andergassen D., Dotter C.P., Kulinski T.M., Guenzl P.M., Bammer P.C., Barlow D.P., Pauler F.M., and Hudson Q.J. (2015). Allelome.PRO, a pipeline to define allele-specific genomic features from high-throughput sequencing data. Nucleic Acids Res. 43.*
 <br /> \
 Allelome.PRO2 / Allelome.LINK \
