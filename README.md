@@ -18,7 +18,7 @@ Allelome.PRO \
 <br /> \
 Allelome.PRO2 / Allelome.LINK \
 *Hasenbein T., Hoelzl S., Engelhardt S., Andergassen D. (2025). Allele-specific genomics decodes gene targets and mechanisms of the non-coding genome (BioRxiv)*
-**
+
 <br />
 
 # 1. Installation
