@@ -87,7 +87,7 @@ Three different files are required as input for Allelome.PRO2:
 * SNP file (BED6 format)
 
 ### 3.1.1 Sample file:
-The sample file is a BAM file that stores the aligned NGS-reads from either RNA-, ChIP-, ATAC-, or scRNA-sequencing in binary format. The file can be sorted by coordinates or unsorted. If unsorted Allelome.PRO2 can sort the BAM file for you. 
+The sample file is a BAM file that stores the aligned NGS-reads from either RNA-, ChIP-, ATAC-, or scRNA-sequencing in binary format. The file can be sorted by coordinates or unsorted. If unsorted Allelome.PRO2 can sort the BAM file for you. For Allelome.PRO2, no further pre-processing of the BAM file is needed. 
 
 ### 3.1.2 Annotation file:
 The annotation file is a six-column text file containing the position information of your loci of interest in BED6 format
