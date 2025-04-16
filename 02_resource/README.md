@@ -16,7 +16,8 @@ Candidate predictions will be displayed via the Integrative Genomics Viewer (IGV
 |[Heart](https://tinyurl.com/26a6yh3d)|[Liver](https://tinyurl.com/2ayy2lyk) |[Spleen](https://tinyurl.com/236ydb5h)|
 
 ### 1.2 Example: Kidney
-<img width="700" alt="mice_example" src="https://github.com/user-attachments/assets/1fb15a55-34e0-459c-938c-3f3f524ea3da"><br />
+<img width="700" alt="mice_example" src="https://github.com/user-attachments/assets/c1207831-7454-459d-9e71-6fe1cb0a9a11"><br />
+
 
 | Track      | Description   |
 | ------------- | ------------- |
