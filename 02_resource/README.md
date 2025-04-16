@@ -21,10 +21,10 @@ Candidate predictions will be displayed via the Integrative Genomics Viewer (IGV
 | Track      | Description   |
 | ------------- | ------------- |
 | Allelome.LINK_Ki_9w_enhancing| Green arcs show enhancing linkages, where a ncRNA was predicted to have an enhancing function on the linked protein-coding target gene. By clicking on the linkage, both interaction loci are named, and the linkage score is displayed |
-| Merged_fwd | RNA-seq track as a representative example. The track was obtained from a single replicate out of the three replicates where the linkages are based on. Reads are shown for the forward strand only and split towards the maternal (red) and paternal (blue) allele |
-| Allelome.PRO_Ki_9w | Allelome.PRO v2.0 output naming the locus, the median number of reads, the min. allelic score and the median allelic ratio. The color denotes the allelic bias (red: maternal, green: biallelic, blue: paternal)|
+| Merged_fwd | RNA-seq track shown as a representative example, derived from one of the three replicates used for linkage analysis. Reads are displayed for the forward strand only and are split by allele: maternal (red) and paternal (blue). Allele-specific read assignment was performed using SNPsplit. |
+| Allelome.PRO_Ki_9w | Allelome.PRO2 output naming the locus, the median number of reads, the min. allelic score and the median allelic ratio. The color denotes the allelic bias (red: maternal, green: biallelic, blue: paternal)|
 | Refseq Genes | RefSeq gene annotation |
-| Merged_rev | RNA-seq track as a representative example. The track was obtained from a single replicate out of the three replicates where the linkages are based on. Reads are shown for the reverse strand only and split towards the maternal (red) and paternal (blue) allele |
+| Merged_rev | RNA-seq track shown as a representative example, derived from one of the three replicates used for linkage analysis. Reads are displayed for the reverse strand only and are split by allele: maternal (red) and paternal (blue). Allele-specific read assignment was performed using SNPsplit. |
 | Allelome.LINK_Ki_9w_repressive| Red arcs show repressive linkages, where a ncRNA was predicted to have a repressive function on the linked protein-coding target gene. By clicking on the linkage, both interaction loci are named, and the linkage score is displayed  |
 
 ## 2. Human GTEx samples
