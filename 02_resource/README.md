@@ -19,7 +19,6 @@ Candidate predictions will be displayed via the Integrative Genomics Viewer (IGV
 <img width="700" alt="mice_example" src="https://github.com/user-attachments/assets/1fb15a55-34e0-459c-938c-3f3f524ea3da"><br />
 
 | Track      | Description   |
-
 | ------------- | ------------- |
 | Allelome.LINK_Ki_9w_enhancing| Green arcs show enhancing linkages, where a ncRNA was predicted to have an enhancing function on the linked protein-coding target gene. By clicking on the linkage, both interaction loci are named, and the linkage score is displayed |
 | Merged_fwd | RNA-seq track shown as a representative example, derived from one of the three replicates used for linkage analysis. Reads are displayed for the forward strand only and are split by allele: maternal (red) and paternal (blue). Allele-specific read assignment was performed using SNPsplit. |
