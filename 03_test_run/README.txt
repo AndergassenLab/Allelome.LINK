@@ -12,13 +12,13 @@ Sample description
 - Annotation: RefSeq annotation.
 All files are subset for chromosome 17.
 
-
-######------ Create environment ------######
+```bash
+######------ 1. Create environment ------######
 conda env create -f ./01_test_folder/00_environment/environment.yml --name AllelomePRO2_test
 conda activate AllelomePRO2_test
 
 
-######------ Run Allelome.PRO2 ------######
+######------ 2. Run Allelome.PRO2 ------######
 bash "./00_src/Allelome.PRO2.sh" \
   -i ./01_test_folder/01_input/01_BAM_chr17.bam \
   -s ./01_test_folder/01_input/02_SNPS_chr17.bed \
@@ -33,7 +33,7 @@ bash "./00_src/Allelome.PRO2.sh" \
 latest_output=$(ls -td ./01_test_folder/*/locus_table.txt | head -n 1)
 
 
-######------ Run Allelome.LINK ------######
+######------ 3. Run Allelome.LINK ------######
 Rscript "./00_src/Allelome.LINK.R" \
   -i $latest_output \
   -r 20 \
@@ -41,3 +41,4 @@ Rscript "./00_src/Allelome.LINK.R" \
   -w 100 \
   -n test_run \
   -o ./01_test_folder/
+```
