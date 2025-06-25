@@ -25,12 +25,12 @@ bash "./00_src/Allelome.PRO2.sh" \
   -a ./01_test_folder/01_input/03_ANNOTATION_chr17.bed \
   -r 1 \
   -t 20 \
-  -o ./01_test_folder/02_output
+  -o ./01_test_folder/
 
 
 ######------ Capture name of Allelome.PRO2 output ------######
 # Capture the newest output folder name (assuming it's the most recently created/modified)
-latest_output=$(ls -td ./01_test_folder/02_output/*/locus_table.txt | head -n 1)
+latest_output=$(ls -td ./01_test_folder/*/locus_table.txt | head -n 1)
 
 
 ######------ Run Allelome.LINK ------######
@@ -40,4 +40,4 @@ Rscript "./00_src/Allelome.LINK.R" \
   -b 0.7 \
   -w 100 \
   -n test_run \
-  -o ./01_test_folder/02_output
+  -o ./01_test_folder/
