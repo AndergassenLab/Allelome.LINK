@@ -109,7 +109,8 @@ SNP positions have to be based on the same reference genome that the BAM file wa
 ```bash
 sh create_SNPfile_v5.sh mgp.v5.merged.snps_all.dbSNP142.vcf
 ```
-If Allelome.PRO2 is used with eg. human data, SNPs have to be called and phased in advance to generate the SNP file.
+Please note that Allelome.PRO2 requires a SNP file specific to each sample, depending on the genetic background. In cases where samples are genetically distinct, such as human individuals, a unique SNP file must be provided per sample, reflecting that individual's specific set of heterozygous variants. In these cases, SNP files must be generated from scratch, typically from a VCF-file including the called and phased genetic variants, followed by filtering to retain only high-confidence heterozygous SNPs. This filtering is not performed automatically by the pipeline and should be done as part of the user's preprocessing steps.
+
 <br />
 
 ## 3.2 Input flags for Allelome.PRO2:
@@ -190,7 +191,7 @@ To run Allelome.LINK the *locus_table.txt* file from the Allelome.PRO2 run is ne
 <br />
 
 ## 4.3 Output files 
-Allelome.LINK generates a results directory including different output files. The main output files are **links_table.txt** with information on the linked loci and **.bedpe** file to visualize the links in a genome browser. Please find the detailed information about all output files in Table 5.
+Allelome.LINK generates a results directory including different output files. The main output files are **links_table.txt** with information on the linked loci and **.bedpe** file to visualize the links in a genome browser. Please find the detailed information about all output files in Table 5. By default, Allelome.LINK links all informative allele-specific loci regardless of biotype, including ncRNA–ncRNA and pcGene-pcGene interactions. This flexible design allows users to filter results according to their specific biological questions, ensuring broad applicability of the tool across diverse research contexts. Moreover, Allelome.LINK can be used to further assign DNA-regulatory elements to their potential targets by including ChIP-seq or ATAC-seq data and merging this data with the RNA-seq data set. Detailed information on how to do this will be available in the published manuscript. 
 
 *Table 5.*
 | Name      | Description   | 
