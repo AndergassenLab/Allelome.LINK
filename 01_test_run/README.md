@@ -17,6 +17,7 @@ All files are subset for chromosome 17.
 ## 1. Create environment
 ```bash
 ######------ 1. Create environment ------######
+# Does not work for arm64
 conda env create -f ./01_test_run/00_environment/environment.yml --name AllelomePRO2_test
 conda activate AllelomePRO2_test
 ```
