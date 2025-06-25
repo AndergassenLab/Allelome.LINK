@@ -1,23 +1,26 @@
-To Run Allelome.PRO2 and Allelome.LINK please execute the run_allelome.sh script.
+## Test end-to-end run fo rAllelome.PRO2 and Allelome.LINK
 
 1. Create environment: Create an environment with all necessary software packages.
 2. Run Allelome.PRO2: Executes the Allelome.PRO2 pipeline on the test data set.
 3. Run Allelome.LINK Executes the Allelome.LINK pipeline on the test data set.
 
-Please execute from within the 06_CODE/ folder or give the full path to the files.
+To execute give the full path to the files.
 
-Sample description
+## Sample description
 - BAM file: RNA-seq data (unstranded) of the heart from 9-week old F1 hybrid mice (BL6xCAST cross).
 - SNP file: Generated for the BL6xCAST cross.
 - Annotation: RefSeq annotation.
 All files are subset for chromosome 17.
 
+## 1. Create environment
 ```bash
 ######------ 1. Create environment ------######
 conda env create -f ./01_test_folder/00_environment/environment.yml --name AllelomePRO2_test
 conda activate AllelomePRO2_test
+```
 
-
+## 2. Run Allelome.PRO2
+```bash
 ######------ 2. Run Allelome.PRO2 ------######
 bash "./00_src/Allelome.PRO2.sh" \
   -i ./01_test_folder/01_input/01_BAM_chr17.bam \
@@ -26,13 +29,15 @@ bash "./00_src/Allelome.PRO2.sh" \
   -r 1 \
   -t 20 \
   -o ./01_test_folder/
-
+```
 
 ######------ Capture name of Allelome.PRO2 output ------######
+```bash
 # Capture the newest output folder name (assuming it's the most recently created/modified)
 latest_output=$(ls -td ./01_test_folder/*/locus_table.txt | head -n 1)
 
 
+## 3. Run Allelome.LINK
 ######------ 3. Run Allelome.LINK ------######
 Rscript "./00_src/Allelome.LINK.R" \
   -i $latest_output \
