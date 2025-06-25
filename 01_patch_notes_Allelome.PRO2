@@ -1,4 +1,4 @@
-RELEASE PATCH NOTES - Allelome.PRO v2.0
+RELEASE PATCH NOTES - Allelome.PRO2
 
 Purpose of the update: 
 We developed Allelome.PRO v2.0, an updated version of the previously published pipeline (Andergassen et al., 2015) to facilitate the usage of single samples. Unlike its predecessor, Allelome.PRO v2.0 does not discriminate between allele-specific loci arising from imprinted or genetic factors. This update streamlines the identification of ASE at the individual level, improving its applicability to diverse biological samples, including human datasets where forward and reverse crosses cannot be obtained. 
