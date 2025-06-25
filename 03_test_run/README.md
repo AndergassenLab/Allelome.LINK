@@ -21,6 +21,7 @@ conda activate AllelomePRO2_test
 
 ## 2. Run Allelome.PRO2
 ```bash
+######------ 2. Run Allelome.PRO2 ------######
 bash "./00_src/Allelome.PRO2.sh" \
   -i ./03_test_run/01_input/01_BAM_chr17.bam \
   -s ./03_test_run/01_input/02_SNPS_chr17.bed \
