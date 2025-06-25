@@ -109,7 +109,27 @@ SNP positions have to be based on the same reference genome that the BAM file wa
 ```bash
 sh create_SNPfile_v5.sh mgp.v5.merged.snps_all.dbSNP142.vcf
 ```
-Please note that Allelome.PRO2 requires a SNP file specific to each sample, depending on the genetic background. In cases where samples are genetically distinct, such as human individuals, a unique SNP file must be provided per sample, reflecting that individual's specific set of heterozygous variants. In these cases, SNP files must be generated from scratch, typically from a VCF-file including the called and phased genetic variants, followed by filtering to retain only high-confidence heterozygous SNPs. This filtering is not performed automatically by the pipeline and should be done as part of the user's preprocessing steps.
+Please note that Allelome.PRO2 requires a SNP file specific to each sample, depending on the genetic background. In cases where samples are genetically distinct, such as human individuals, a unique SNP file must be provided per sample, reflecting that individual's specific set of heterozygous variants. In these cases, SNP files must be generated from scratch, typically from a VCF-file including the called and phased genetic variants, followed by filtering to retain only high-confidence heterozygous SNPs. This filtering is not performed automatically by the pipeline and should be done as part of the user's preprocessing steps. An example for filtering a VCF file to retain only heterozygous variants and converting it into a BED file compatible with Allelome.PRO2 is provided below:
+
+```bash
+######------ filter for heterozygous SNPs ------###### 
+bcftools view $sample".recode.vcf" -g het -Ov -o $sample".recode_het.vcf" 
+
+
+######------ generate bed file ------###### 
+bcftools query -f '%CHROM\t%POS\t[%REF]\t[%ALT]\t[%GT]\n' $sample".recode_het.vcf" > $sample"_het.bed"
+# convert binary notation to alleles
+awk '{ split($5, alleles, "|");  if (alleles[1] == "0") allele1 = $3; else allele1 = $4; if (alleles[2] == "0") allele2 = $3; else allele2 = $4; allele_str = allele1 allele2; print $1 "\t" $2-1 "\t" $2 "\t" allele_str "\t0\t.";}' $sample"_het.bed" > $sample"_SNPfile.bed"
+# keep SNPs only (no indels, deletions)
+awk 'length($4) == 2' $sample"_SNPfile.bed" > $sample"_SNPfile_fil.bed"
+# total SNPs
+cat $sample"_SNPfile_fil.bed" | wc -l
+
+
+######------ shift SNP position ------###### 
+# make start and end for SNP identical to actual SNP position
+awk '{$2 = $3; OFS="\t"; print}' $sample"_SNPfile_fil.bed" > $sample"_SNPfile_fil_shift.bed" 
+```
 
 <br />
 
