@@ -46,3 +46,11 @@ Rscript "./00_src/Allelome.LINK.R" \
   -n AllelomeLINK \
   -o ./03_test_run/
 ```
+
+### Subsequently, you can load the .bed and .bedpe files into the IGV genome browser
+
+<img width="1029" alt="Screenshot 2025-06-25 at 14 15 24" src="https://github.com/user-attachments/assets/0dd63112-7c2e-49e2-9a52-d6dd1d8e508f" />
+
+
+
+
