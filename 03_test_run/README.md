@@ -31,13 +31,12 @@ bash "./00_src/Allelome.PRO2.sh" \
   -o ./01_test_folder/
 ```
 
-######------ Capture name of Allelome.PRO2 output ------######
+## 3. Run Allelome.LINK
 ```bash
+######------ Capture name of Allelome.PRO2 output ------######
 # Capture the newest output folder name (assuming it's the most recently created/modified)
 latest_output=$(ls -td ./01_test_folder/*/locus_table.txt | head -n 1)
 
-
-## 3. Run Allelome.LINK
 ######------ 3. Run Allelome.LINK ------######
 Rscript "./00_src/Allelome.LINK.R" \
   -i $latest_output \
