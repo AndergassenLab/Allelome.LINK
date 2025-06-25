@@ -1,4 +1,4 @@
-## Test end-to-end run fo rAllelome.PRO2 and Allelome.LINK
+## Test end-to-end run for Allelome.PRO2 and Allelome.LINK
 
 1. Create environment: Create an environment with all necessary software packages.
 2. Run Allelome.PRO2: Executes the Allelome.PRO2 pipeline on the test data set.
