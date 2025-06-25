@@ -1,5 +1,7 @@
 ## Test end-to-end run for Allelome.PRO2 and Allelome.LINK
 
+Simply download the repository and get started:
+
 1. Create environment: Create an environment with all necessary software packages.
 2. Run Allelome.PRO2: Executes the Allelome.PRO2 pipeline on the test data set.
 3. Run Allelome.LINK Executes the Allelome.LINK pipeline on the test data set.
